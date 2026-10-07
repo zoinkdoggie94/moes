@@ -1,18 +1,21 @@
 {
-  "name": "Moe's App Hub Full Library",
-  "identifier": "com.zoinkdoggie94.moes",
+  "name": "Moe's App Hub — Shrubbery",
+  "identifier": "com.shrubhub.moes",
   "apiVersion": "v2",
-  "subtitle": "231 apps automatically synced from Moe's App Hub",
-  "description": "Automatically generated full Moe's App Hub catalog.",
+  "subtitle": "Full Moe's App Hub library with 231 apps • Built by Shrubbery / ShrubHub",
+  "description": "The full automatically updated Moe's App Hub library, converted into an AltStore/SideStore source by Shrubbery. Built and maintained by Shrubbery / ShrubHub. Original app catalog and app downloads are provided by Moe's App Hub.",
+  "iconURL": "https://moe.mohkg1017.pro/apple-touch-icon.png?v=1791318045.0",
+  "sourceIconURL": "https://moe.mohkg1017.pro/apple-touch-icon.png?v=1791318045.0",
+  "headerURL": "https://moe.mohkg1017.pro/apple-touch-icon.png?v=1791318045.0",
+  "website": "https://github.com/zoinkdoggie94/moes",
   "sourceURL": "https://raw.githubusercontent.com/zoinkdoggie94/moes/main/apps.json",
-  "website": "https://moe.mohkg1017.pro",
   "tintColor": "#34C759",
   "apps": [
     {
       "name": "Madeira 0.1.3 Moe Patched",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1791167980.a5298",
+      "bundleIdentifier": "com.shrubhub.moes.a1791167980.a5298",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Madeira 0.1.3 Moe Patched for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Madeira_0.1.3_Moe_Patched_1791168265896624388.webp?v=1791318045.0",
       "versions": [
@@ -27,9 +30,9 @@
     },
     {
       "name": "Twitch Unblock new twitch adblock clientMoe",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1791167942.a9698",
+      "bundleIdentifier": "com.shrubhub.moes.a1791167942.a9698",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Twitch Unblock new twitch adblock clientMoe for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Twitch_Unblock_new_twitch_adblock_clientMoe_1791168265896180706.webp?v=1791318045.0",
       "versions": [
@@ -44,9 +47,9 @@
     },
     {
       "name": "nuvio 0.5.6 Moe Patched",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1790613010.a6710",
+      "bundleIdentifier": "com.shrubhub.moes.a1790613010.a6710",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "nuvio 0.5.6 Moe Patched for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Nuvio_0.5.4_Moe_Patched_1790613385057390169.webp?v=1791318045.0",
       "versions": [
@@ -61,9 +64,9 @@
     },
     {
       "name": "Instagram 449.0.0 Theta 5.0",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a6127",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a6127",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Instagram 449.0.0 Theta 5.0 for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Instagram_396_Theta_3.1_1756967109.webp?v=1791318045.0",
       "versions": [
@@ -78,9 +81,9 @@
     },
     {
       "name": "Instagram 449.0.0 SC 1.1.1 Moe",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758659552.a5935",
+      "bundleIdentifier": "com.shrubhub.moes.a1758659552.a5935",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Instagram 449.0.0 SC 1.1.1 Moe for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Instagram_399_SC_0.80_Moe_Patched__1758659552.webp?v=1791318045.0",
       "versions": [
@@ -95,9 +98,9 @@
     },
     {
       "name": "instagram 449.0.0 NYX 1.7.2 Beta",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a8129",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a8129",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "instagram 449.0.0 NYX 1.7.2 Beta for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/instagram_396.0_NYX_1.6.0_Beta_3_1756967686.webp?v=1791318045.0",
       "versions": [
@@ -112,9 +115,9 @@
     },
     {
       "name": "Instagram 449.0.0 Moe Sparkle 1.4",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1788294021.a7853",
+      "bundleIdentifier": "com.shrubhub.moes.a1788294021.a7853",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Instagram 449.0.0 Moe Sparkle 1.4 for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Instagram_445.0.0_Moe_Sparkle_1.3.0_1788294069667699485.webp?v=1791318045.0",
       "versions": [
@@ -129,9 +132,9 @@
     },
     {
       "name": "Instagram 449.0.0 Moe RyukGram 1.4.0",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1776979936.a3686",
+      "bundleIdentifier": "com.shrubhub.moes.a1776979936.a3686",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Instagram 449.0.0 Moe RyukGram 1.4.0 for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Instagram_426.0.0_Moe_RyukGram_1.2.1_OLED_1776985098051592662.webp?v=1791318045.0",
       "versions": [
@@ -146,9 +149,9 @@
     },
     {
       "name": "Instagram 449.0.0 Moe Rocket Cracked 4.3.3",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a8648",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a8648",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Instagram 449.0.0 Moe Rocket Cracked 4.3.3 for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Instagram_396_Rocket_3.8.36_1756968833.webp?v=1791318045.0",
       "versions": [
@@ -163,9 +166,9 @@
     },
     {
       "name": "Instagram 449.0.0 Moe Regram 6.3",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1786468125.a1650",
+      "bundleIdentifier": "com.shrubhub.moes.a1786468125.a1650",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Instagram 449.0.0 Moe Regram 6.3 for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Instagram_442.0.0_Moe_Regram_5.2.1_OLED_1.5_1786468182058071782.webp?v=1791318045.0",
       "versions": [
@@ -180,9 +183,9 @@
     },
     {
       "name": "Instagram 449.0.0 Moe NYX 1.7.0",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1787252583.a6546",
+      "bundleIdentifier": "com.shrubhub.moes.a1787252583.a6546",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Instagram 449.0.0 Moe NYX 1.7.0 for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Instagram_443.0.0_Moe_NYX_1.7.0_1787252663416352110.webp?v=1791318045.0",
       "versions": [
@@ -197,9 +200,9 @@
     },
     {
       "name": "Instagram 449.0.0 Moe Multi 8.5",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a9180",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a9180",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Do not sign with ESign. Hold the Reels button or use a three-finger gesture to open Moe Multi. A fresh install is recomm...",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Instagram_400.1_Moe_Multi_3.1.0_1759883095.webp?v=1791318045.0",
       "versions": [
@@ -214,9 +217,9 @@
     },
     {
       "name": "Instagram 449.0.0 LRD 2.19 Cracked",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1767395338.a6014",
+      "bundleIdentifier": "com.shrubhub.moes.a1767395338.a6014",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Instagram 449.0.0 LRD 2.19 Cracked for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Instagram_410.1_LRD2.19_Cracked_1767395338.webp?v=1791318045.0",
       "versions": [
@@ -231,9 +234,9 @@
     },
     {
       "name": "Instagram 449.0.0 INK Plus 5.2.10",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a8735",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a8735",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Instagram 449.0.0 INK Plus 5.2.10 for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Instagram_396.0_inkKillerPlus2.4.80__1756969260.webp?v=1791318045.0",
       "versions": [
@@ -248,9 +251,9 @@
     },
     {
       "name": "instagram 449.0.0 IGFormat 2.6",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a2103",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a2103",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "instagram 449.0.0 IGFormat 2.6 for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Instagram_1756965340.webp?v=1791318045.0",
       "versions": [
@@ -265,9 +268,9 @@
     },
     {
       "name": "Instagram 449.0.0 DL 2.5 Cracked",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1767395377.a5704",
+      "bundleIdentifier": "com.shrubhub.moes.a1767395377.a5704",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Instagram 449.0.0 DL 2.5 Cracked for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Instagram_410.1_DL_2.5_Cracked_1767395377.webp?v=1791318045.0",
       "versions": [
@@ -282,9 +285,9 @@
     },
     {
       "name": "Instagram 449.0.0 BH 1.2",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a5831",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a5831",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Instagram 449.0.0 BH 1.2 for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Instagram_1756965161.webp?v=1791318045.0",
       "versions": [
@@ -299,9 +302,9 @@
     },
     {
       "name": "Instagram 449.0.0 AC 1.5",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a8023",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a8023",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Instagram 449.0.0 AC 1.5 for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Instagram_1756965043.webp?v=1791318045.0",
       "versions": [
@@ -316,9 +319,9 @@
     },
     {
       "name": "Twitch 31.4.4 Tweach 2.4.1",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1776873611.a4164",
+      "bundleIdentifier": "com.shrubhub.moes.a1776873611.a4164",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Twitch 31.4.4 Tweach 2.4.1 for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Twitch_29.1_Moe_Tweach_2.3.1_1776873809811834224.webp?v=1791318045.0",
       "versions": [
@@ -333,9 +336,9 @@
     },
     {
       "name": "Twitch 31.4.4 Moe TwitchControl 0.0.6 read description",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1776873777.a5494",
+      "bundleIdentifier": "com.shrubhub.moes.a1776873777.a5494",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "for adblock to work, open mod menu, and import the file you download from https://tinyurl.com/3n9sz6mv into the mods set...",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Twitch_29.1_Moe_TwitchControl_0.0.2_1776873809811974185.webp?v=1791318045.0",
       "versions": [
@@ -350,9 +353,9 @@
     },
     {
       "name": "Spotify 9.1.88 Moe Eevee Revived by jaydenjcp Pro",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a8824",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a8824",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Spotify 9.1.88 Moe Eevee Revived by jaydenjcp Pro for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/static/icons/Spotify_xlarge.webp?v=1791318045.0",
       "versions": [
@@ -367,9 +370,9 @@
     },
     {
       "name": "Spotify 9.1.88 Liquid Glass Edition Moe Eevee Revived by jaydenjcp Pro also includes spoti.pw",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1789672464.a3215",
+      "bundleIdentifier": "com.shrubhub.moes.a1789672464.a3215",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Spotify 9.1.88 Liquid Glass Edition Moe Eevee Revived by jaydenjcp Pro also includes spoti.pw for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Spotify_9.1.82_Liquid_Glass_Edition_Moe_Eevee_Revived_by_jaydenjcp_Pro_and_also_spoti.pw_1789672811250693444.webp?v=1791318045.0",
       "versions": [
@@ -384,9 +387,9 @@
     },
     {
       "name": "Soundcloud GO Unlocked 8.80.1 Pro VAXMG",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1759246108.a8938",
+      "bundleIdentifier": "com.shrubhub.moes.a1759246108.a8938",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Soundcloud GO Unlocked 8.80.1 Pro VAXMG for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Soundcloud_GO%2B_Unlocked_8.33.0_Pro_1759246108.webp?v=1791318045.0",
       "versions": [
@@ -401,9 +404,9 @@
     },
     {
       "name": "SoundCloud 8.80.1 Nexa vaxmg B4",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1781213117.a4442",
+      "bundleIdentifier": "com.shrubhub.moes.a1781213117.a4442",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "SoundCloud 8.80.1 Nexa vaxmg B4 for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/SoundCloud_8.64.0_Moe_Nexa_by_VagMG_1781213528326292936.webp?v=1791318045.0",
       "versions": [
@@ -418,9 +421,9 @@
     },
     {
       "name": "Threads Saver 449.0.0 Pro",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758661691.a2394",
+      "bundleIdentifier": "com.shrubhub.moes.a1758661691.a2394",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Threads Saver 449.0.0 Pro for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Threads_1758661682.webp?v=1791318045.0",
       "versions": [
@@ -435,9 +438,9 @@
     },
     {
       "name": "Facebook 581.0.0 Moe iQ 1.2 and Nexus",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1790798429.a4247",
+      "bundleIdentifier": "com.shrubhub.moes.a1790798429.a4247",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Facebook 581.0.0 Moe iQ 1.2 and Nexus for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Facebook_581.0.0_Moe_iQ_1.2_and_Nexus_1790798616728206189.webp?v=1791318045.0",
       "versions": [
@@ -452,9 +455,9 @@
     },
     {
       "name": "‎Nagram 12.9.2.2 Moe Lead 1.4.4",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1790796675.a2170",
+      "bundleIdentifier": "com.shrubhub.moes.a1790796675.a2170",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "hold down ask a question under settings for the lead settings",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Nagram_12.9.2.2_Moe_Lead_1.4.4_1790796772215408024.webp?v=1791318045.0",
       "versions": [
@@ -469,9 +472,9 @@
     },
     {
       "name": "YouTube 21.39.4 YTKACE 1.1.1 Moe",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1786032057.a8791",
+      "bundleIdentifier": "com.shrubhub.moes.a1786032057.a8791",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "YouTube 21.39.4 YTKACE 1.1.1 Moe for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/YouTube_21.31.3_YTKACE_0.80_Moe_1786032663726232874.webp?v=1791318045.0",
       "versions": [
@@ -486,9 +489,9 @@
     },
     {
       "name": "TikTok 47.0.0 Moe GTok 2.2",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1789344438.a9098",
+      "bundleIdentifier": "com.shrubhub.moes.a1789344438.a9098",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "TikTok 47.0.0 Moe GTok 2.2 for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/TikTok_46.8.0_Moe_GTok_1.9_1789344467536401046.webp?v=1791318045.0",
       "versions": [
@@ -503,9 +506,9 @@
     },
     {
       "name": "TikTok 47.0.0 Moe ASJ 1.3",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1789339062.a3564",
+      "bundleIdentifier": "com.shrubhub.moes.a1789339062.a3564",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "TikTok 47.0.0 Moe ASJ 1.3 for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/TikTok_46.8.0_Moe_ASJ_1.2_1789344467536691967.webp?v=1791318045.0",
       "versions": [
@@ -520,9 +523,9 @@
     },
     {
       "name": "Webssh 33.0 Pro",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a7340",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a7340",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Webssh 33.0 Pro for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/static/icons/WebSSH_xlarge.webp?v=1791318045.0",
       "versions": [
@@ -537,9 +540,9 @@
     },
     {
       "name": "Infuse 8.5.6 2.6 Moe Plus",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1776873562.a1009",
+      "bundleIdentifier": "com.shrubhub.moes.a1776873562.a1009",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Infuse 8.5.6 2.6 Moe Plus for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Infuse_8.4.3_Moe_Plus_1776873809811426502.webp?v=1791318045.0",
       "versions": [
@@ -554,9 +557,9 @@
     },
     {
       "name": "Reddit 2026.39.0 MoesReddit 4.5.1 Moe",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1769231115.a3988",
+      "bundleIdentifier": "com.shrubhub.moes.a1769231115.a3988",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Hold down with 3 fingers to open moemod menu",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Moes_Reddit_2026.03.0__1769231115.webp?v=1791318045.0",
       "versions": [
@@ -571,9 +574,9 @@
     },
     {
       "name": "YouTube 21.39.4 YTKillerPlus 6.6 Stable with Mods",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757017627.a3645",
+      "bundleIdentifier": "com.shrubhub.moes.a1757017627.a3645",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "YouTube 21.39.4 YTKillerPlus 6.6 Stable with Mods for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Youtube_20.37.3_YTKillerPlus_3.2.94_Patched_1758409583.webp?v=1791318045.0",
       "versions": [
@@ -588,9 +591,9 @@
     },
     {
       "name": "Tiktok 47.0.0 TTKillerPlus 2.2.5",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1775438850.a6951",
+      "bundleIdentifier": "com.shrubhub.moes.a1775438850.a6951",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "If you dont know how to login read my blog page",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Tiktok_44.5.0_TTKillerPlus_1.0_initial_release_1775438885894735138.webp?v=1791318045.0",
       "versions": [
@@ -605,9 +608,9 @@
     },
     {
       "name": "Youtube 21.39.4 Moe YTPlus 5.2.2 Paid",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1784308782.a8867",
+      "bundleIdentifier": "com.shrubhub.moes.a1784308782.a8867",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Youtube 21.39.4 Moe YTPlus 5.2.2 Paid for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/YouTube_20.37.3_Beta_3_Cyan_Edition_1758409559.webp?v=1791318045.0",
       "versions": [
@@ -622,9 +625,9 @@
     },
     {
       "name": "Youtube 21.39.4 Moe YTPlus 5.2.1 Free",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a9593",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a9593",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Youtube 21.39.4 Moe YTPlus 5.2.1 Free for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/YouTube_20.37.3_Beta_3_Cyan_Edition_1758409559.webp?v=1791318045.0",
       "versions": [
@@ -639,9 +642,9 @@
     },
     {
       "name": "YouTube 21.39.4 Moe YouPro 0.3",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1784605714.a2631",
+      "bundleIdentifier": "com.shrubhub.moes.a1784605714.a2631",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "YouTube 21.39.4 Moe YouPro 0.3 for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/YouTube_21.29.03_Moe_YouPro_0.3_1784606462412414766.webp?v=1791318045.0",
       "versions": [
@@ -656,9 +659,9 @@
     },
     {
       "name": "YouTube 21.39.4 Moe YouMod 2.0",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1784605700.a7919",
+      "bundleIdentifier": "com.shrubhub.moes.a1784605700.a7919",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "YouTube 21.39.4 Moe YouMod 2.0 for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/YouTube_21.29.03_Moe_YouMod_1.3.0_1784606462412299845.webp?v=1791318045.0",
       "versions": [
@@ -673,9 +676,9 @@
     },
     {
       "name": "Youtube 21.39.4 Moe SY 2.0 Moe",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1759517364.a7181",
+      "bundleIdentifier": "com.shrubhub.moes.a1759517364.a7181",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Youtube 21.39.4 Moe SY 2.0 Moe for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Youtube_20.39.6_SY_1.9_Moe__1759517364.webp?v=1791318045.0",
       "versions": [
@@ -690,9 +693,9 @@
     },
     {
       "name": "Youtube 21.39.4 Moe Multi 11.00",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1784208275.a1417",
+      "bundleIdentifier": "com.shrubhub.moes.a1784208275.a1417",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Dont sign with esign, To Open Multi settings, use the button under the youtube settings or you can also hold anywhere wi...",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Youtube_20.37.3_Multi_2.7.5_Moe_Patched_1758409576.webp?v=1791318045.0",
       "versions": [
@@ -707,9 +710,9 @@
     },
     {
       "name": "Youtube 21.39.4 Moe LRD 1.13 Cracked",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1767418254.a3524",
+      "bundleIdentifier": "com.shrubhub.moes.a1767418254.a3524",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Youtube 21.39.4 Moe LRD 1.13 Cracked for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Youtube_20.50.9_LRD1.12_Cracked_1767418254.webp?v=1791318045.0",
       "versions": [
@@ -724,9 +727,9 @@
     },
     {
       "name": "YouTube 21.39.4 Moe DLTube 2.16.3 Cracked",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1784605604.a5405",
+      "bundleIdentifier": "com.shrubhub.moes.a1784605604.a5405",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "YouTube 21.39.4 Moe DLTube 2.16.3 Cracked for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/YouTube_21.29.03_Moe_DLTube_2.16.3_Cracked_1784606462411703001.webp?v=1791318045.0",
       "versions": [
@@ -741,9 +744,9 @@
     },
     {
       "name": "Tiktok 47.0.0 VibeTok 1.76 Moe",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757106595.a2955",
+      "bundleIdentifier": "com.shrubhub.moes.a1757106595.a2955",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "If you dont know how to login read my blog page",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Tiktok_41.5.0_Vibetok1.2_Moe_Patched_1757106595.webp?v=1791318045.0",
       "versions": [
@@ -758,9 +761,9 @@
     },
     {
       "name": "Tiktok 47.0.0 MoeMulti 10.3",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1765813755.a4971",
+      "bundleIdentifier": "com.shrubhub.moes.a1765813755.a4971",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Do not sign with ESign. Hold the Profile button or use a three-finger gesture to open Moe Multi. For login help, see the...",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Tiktok_42.9.0_Multi_3.3.0_Moe_Patched_V2_1765813755.webp?v=1791318045.0",
       "versions": [
@@ -775,9 +778,9 @@
     },
     {
       "name": "Swiftgram Pro 12.9.3 With Premium and Lead 1.4.4 Moe",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1778444395.a1634",
+      "bundleIdentifier": "com.shrubhub.moes.a1778444395.a1634",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Hold Down ask a question under swiftgram settings yes includes SG Pro!",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Swiftgram_Pro_12.6.2_With_Lead_1.3.4_Moe_1778444482801089470.webp?v=1791318045.0",
       "versions": [
@@ -792,9 +795,9 @@
     },
     {
       "name": "Swiftgram Pro 12.9.3 TGExtra and PREMIUM Swiftgram alt patch",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1760679599.a3413",
+      "bundleIdentifier": "com.shrubhub.moes.a1760679599.a3413",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "hold down ask a question to open tgmenu",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Swiftgram_12.1.1_TG_Extra_1.5_Liquid_Glass_Beta_1760679599.webp?v=1791318045.0",
       "versions": [
@@ -809,9 +812,9 @@
     },
     {
       "name": "Swiftgram Pro 12.9.3 TG Extra 1.7.3 Cracked Latest",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1768418940.a1946",
+      "bundleIdentifier": "com.shrubhub.moes.a1768418940.a1946",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "hold down \"ask a question\" under settings",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Swiftgram_12.3_TG_Extra_1.7.1_Cracked_Latest_Alternate_patch_1768418940.webp?v=1791318045.0",
       "versions": [
@@ -826,9 +829,9 @@
     },
     {
       "name": "Youtube Music 9.39.2 Ultimate Enhanced 2.4.1",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1770927442.a3128",
+      "bundleIdentifier": "com.shrubhub.moes.a1770927442.a3128",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Youtube Music 9.39.2 Ultimate Enhanced 2.4.1 for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Youtube_Music_9.06_Ultimate_Enhanced_2.3.1__1770927442.webp?v=1791318045.0",
       "versions": [
@@ -843,9 +846,9 @@
     },
     {
       "name": "X 12.30 Moe TwiGalaxy 1.14",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1784080465.a3855",
+      "bundleIdentifier": "com.shrubhub.moes.a1784080465.a3855",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "X 12.30 Moe TwiGalaxy 1.14 for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/X_12.8_Moe_TwiGalaxy_1.13_1784080973684412972.webp?v=1791318045.0",
       "versions": [
@@ -860,9 +863,9 @@
     },
     {
       "name": "X 12.30 Moe Multi 8.4 Twitter Themed",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1777318077.a9841",
+      "bundleIdentifier": "com.shrubhub.moes.a1777318077.a9841",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Do not sign with ESign. Use a three-finger hold to open Moe Multi settings. Open this listing for full login instruction...",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/X_11.86_Moe_Multi_7.1_Twitter_Themed_NotSpoofed_1777320240649869255.webp?v=1791318045.0",
       "versions": [
@@ -877,9 +880,9 @@
     },
     {
       "name": "X 12.30 Moe Multi 8.4 Not Themed",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1784080268.a9052",
+      "bundleIdentifier": "com.shrubhub.moes.a1784080268.a9052",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Do not sign with ESign. Use a three-finger hold to open Moe Multi settings. Open this listing for full login instruction...",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/X_12.8_Moe_Multi_7.4_Normal_Liquid_Glass_1784080973683933008.webp?v=1791318045.0",
       "versions": [
@@ -894,9 +897,9 @@
     },
     {
       "name": "X 12.30 Moe DL 2.1.6 Cracked",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1777317975.a1223",
+      "bundleIdentifier": "com.shrubhub.moes.a1777317975.a1223",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "X 12.30 Moe DL 2.1.6 Cracked for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/X_11.86_Moe_DL_2.1.6_Cracked_NotSpoofed_1777320240649596853.webp?v=1791318045.0",
       "versions": [
@@ -911,9 +914,9 @@
     },
     {
       "name": "X 12.30 Moe BH 4.4",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1777317933.a3342",
+      "bundleIdentifier": "com.shrubhub.moes.a1777317933.a3342",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "X 12.30 Moe BH 4.4 for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/X_11.86_Moe_BH_4.4_NotSpoofed_1777320240649328012.webp?v=1791318045.0",
       "versions": [
@@ -928,9 +931,9 @@
     },
     {
       "name": "PDF Expert 7.26.1 Moe Pro",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a9788",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a9788",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "PDF Expert 7.26.1 Moe Pro for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/static/icons/Pdfexpert_xlarge.webp?v=1791318045.0",
       "versions": [
@@ -945,9 +948,9 @@
     },
     {
       "name": "12.30 NeoFreeBird Revived 6.3.1 working login New Moe and andrew Version With Liquid Glass Toggle in tweaks Settings",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1778043855.a2372",
+      "bundleIdentifier": "com.shrubhub.moes.a1778043855.a2372",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Liquid glass toggle is now built into the tweaks settings! Tweak by my friend Andrew and Me, a remade Neofreebird with a...",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/X_11.88_Moe_NFB_Andrew_Moe_Not_Spoofed_1778044015426832935.webp?v=1791318045.0",
       "versions": [
@@ -962,9 +965,9 @@
     },
     {
       "name": "Tiktok 47.0.0 SY 2.1 Moe",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1759517260.a9974",
+      "bundleIdentifier": "com.shrubhub.moes.a1759517260.a9974",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "If you dont know how to login read my blog page",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Tiktok_41.8.0_SY_1.10_Moe_1759517260.webp?v=1791318045.0",
       "versions": [
@@ -979,9 +982,9 @@
     },
     {
       "name": "Tiktok 47.0.0 RX 1.6.6",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a1418",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a1418",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "If you dont know how to login read my blog page",
       "iconURL": "https://moe.mohkg1017.pro/static/icons/TikTok_xlarge.webp?v=1791318045.0",
       "versions": [
@@ -996,9 +999,9 @@
     },
     {
       "name": "TikTok 47.0.0 Moe RuskTok 2.0",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1783999915.a2195",
+      "bundleIdentifier": "com.shrubhub.moes.a1783999915.a2195",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "If you dont know how to login read my blog page",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/TikTok_46.0.0_Moe_RuskTok_1.0_1784003426117604207.webp?v=1791318045.0",
       "versions": [
@@ -1013,9 +1016,9 @@
     },
     {
       "name": "TikTok 47.0.0 Moe InfiniTok 0.2",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1787341870.a1135",
+      "bundleIdentifier": "com.shrubhub.moes.a1787341870.a1135",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "TikTok 47.0.0 Moe InfiniTok 0.2 for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/TikTok_46.5.0_Moe_InfiniTok_0.2_1787343626273291935.webp?v=1791318045.0",
       "versions": [
@@ -1030,9 +1033,9 @@
     },
     {
       "name": "TikTok 47.0.0 Moe BHTTPP 1.9.3 Moe",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757106780.a5787",
+      "bundleIdentifier": "com.shrubhub.moes.a1757106780.a5787",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "If you dont know how to login read my blog page",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Tiktok_41.5.0_BHTTP1.9.3_Moe_Patched_1757106780.webp?v=1791318045.0",
       "versions": [
@@ -1047,9 +1050,9 @@
     },
     {
       "name": "Tiktok 47.0.0 LRD 3.5 Moe",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757106632.a1625",
+      "bundleIdentifier": "com.shrubhub.moes.a1757106632.a1625",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "If you dont know how to login read my blog page",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Tiktok_41.5.0_LRD_3.10_Moe_Patched_1757106632.webp?v=1791318045.0",
       "versions": [
@@ -1064,9 +1067,9 @@
     },
     {
       "name": "TikTok 47.0.0 LRD 3.12 Cracked",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1767499111.a7435",
+      "bundleIdentifier": "com.shrubhub.moes.a1767499111.a7435",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "If you dont know how to login read my blog page",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/TikTok_43.1.0_LRD_3.12_Cracked_1767499111.webp?v=1791318045.0",
       "versions": [
@@ -1081,9 +1084,9 @@
     },
     {
       "name": "Tiktok 47.0.0 EOS 1.0 B10 Cracked",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1768239037.a2310",
+      "bundleIdentifier": "com.shrubhub.moes.a1768239037.a2310",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "If you dont know how to login read my blog page",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Tiktok_43.4.0_EOS1.0B10_Cracked_1768239458.webp?v=1791318045.0",
       "versions": [
@@ -1098,9 +1101,9 @@
     },
     {
       "name": "TikTok 47.0.0 DL 2.1.4 Cracked",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1767499171.a1026",
+      "bundleIdentifier": "com.shrubhub.moes.a1767499171.a1026",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "If you dont know how to login read my blog page",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/TikTok_43.1.0_DL_2.1.4_Cracked_1767499171.webp?v=1791318045.0",
       "versions": [
@@ -1115,9 +1118,9 @@
     },
     {
       "name": "Tiktok 47.0.0 AC 2.1 Moe",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757106556.a2478",
+      "bundleIdentifier": "com.shrubhub.moes.a1757106556.a2478",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "If you dont know how to login read my blog page",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Tiktok_41.5.0_AC2.1_Moe_Patched_1757106556.webp?v=1791318045.0",
       "versions": [
@@ -1132,9 +1135,9 @@
     },
     {
       "name": "Walli 2.0.19 Pro",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a1044",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a1044",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Walli 2.0.19 Pro for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Walli_1756964761.webp?v=1791318045.0",
       "versions": [
@@ -1149,9 +1152,9 @@
     },
     {
       "name": "Narwhal 2026.7.2 Pro Moe needs cert for pro to work",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a2535",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a2535",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Narwhal 2026.7.2 Pro Moe needs cert for pro to work for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/static/icons/Narwhal_xlarge.webp?v=1791318045.0",
       "versions": [
@@ -1166,9 +1169,9 @@
     },
     {
       "name": "MovieBoxPro 16.2 Patched",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1779293035.a1591",
+      "bundleIdentifier": "com.shrubhub.moes.a1779293035.a1591",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "MovieBoxPro 16.2 Patched for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/MovieBoxPro_15.6_Moe_1779293726385497186.webp?v=1791318045.0",
       "versions": [
@@ -1183,9 +1186,9 @@
     },
     {
       "name": "Discord 346.0 Rain Tweak Moe 0.96 Fixed for 1.2.1 Moe",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a8973",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a8973",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Discord 346.0 Rain Tweak Moe 0.96 Fixed for 1.2.1 Moe for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/static/icons/Discord_xlarge.webp?v=1791318045.0",
       "versions": [
@@ -1200,9 +1203,9 @@
     },
     {
       "name": "Wallcraft 3.41 Pro Moe",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758657043.a8761",
+      "bundleIdentifier": "com.shrubhub.moes.a1758657043.a8761",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Wallcraft 3.41 Pro Moe for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Wallcraft_1758656993.webp?v=1791318045.0",
       "versions": [
@@ -1217,9 +1220,9 @@
     },
     {
       "name": "GooglePhotos 7.92.0 GotoHP Unlimited storage mod",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1789619839.a5248",
+      "bundleIdentifier": "com.shrubhub.moes.a1789619839.a5248",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "GooglePhotos 7.92.0 GotoHP Unlimited storage mod for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/GooglePhotos_7.92.0_GotoHP_Unlimited_storage_mod_1789619977243607149.webp?v=1791318045.0",
       "versions": [
@@ -1234,9 +1237,9 @@
     },
     {
       "name": "Stremio 2.0.8 Beta 23 Latest possible ipa",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a1452",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a1452",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Stremio 2.0.8 Beta 23 Latest possible ipa for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/static/icons/Stremio_xlarge.webp?v=1791318045.0",
       "versions": [
@@ -1251,9 +1254,9 @@
     },
     {
       "name": "SnappierIPTV 5.6.7 Moe Snappier Pro",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a1948",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a1948",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "SnappierIPTV 5.6.7 Moe Snappier Pro for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/static/icons/Snappier%20IPTV_xlarge.webp?v=1791318045.0",
       "versions": [
@@ -1268,9 +1271,9 @@
     },
     {
       "name": "Textastic 10.9.8 Pro",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757227420.a8283",
+      "bundleIdentifier": "com.shrubhub.moes.a1757227420.a8283",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Textastic 10.9.8 Pro for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Textastic_1757227391.webp?v=1791318045.0",
       "versions": [
@@ -1285,9 +1288,9 @@
     },
     {
       "name": "Hydra 4.2.1 Pro",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758406318.a6864",
+      "bundleIdentifier": "com.shrubhub.moes.a1758406318.a6864",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Hydra 4.2.1 Pro for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Hydra_1758406303.webp?v=1791318045.0",
       "versions": [
@@ -1302,9 +1305,9 @@
     },
     {
       "name": "Instagram 443.0.0 Regram 6.0 OLED 1.5 Moe",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1770262907.a3468",
+      "bundleIdentifier": "com.shrubhub.moes.a1770262907.a3468",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Instagram 443.0.0 Regram 6.0 OLED 1.5 Moe for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Instagram_414_Regram_2.5_OLED_1.3_Moe_incase_other_415_version_crashes__1770262907.webp?v=1791318045.0",
       "versions": [
@@ -1319,9 +1322,9 @@
     },
     {
       "name": "Instagram 443.0.0 NYX 1.6.4 B2 Cracked",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1767805749.a5206",
+      "bundleIdentifier": "com.shrubhub.moes.a1767805749.a5206",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Instagram 443.0.0 NYX 1.6.4 B2 Cracked for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Instagram_411.1_NYX_1.6.0B3_Cracked_1767805749.webp?v=1791318045.0",
       "versions": [
@@ -1336,9 +1339,9 @@
     },
     {
       "name": "TOR Browser 4.0.11.Moe Pro",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a5783",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a5783",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "TOR Browser 4.0.11.Moe Pro for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Tor_1756750985.webp?v=1791318045.0",
       "versions": [
@@ -1353,9 +1356,9 @@
     },
     {
       "name": "Infuse 8.5.1 Moe Plus 2.6",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1786463103.a6992",
+      "bundleIdentifier": "com.shrubhub.moes.a1786463103.a6992",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Infuse 8.5.1 Moe Plus 2.6 for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Infuse_8.5.1_Moe_Plus_2.6_1786463206584833893.webp?v=1791318045.0",
       "versions": [
@@ -1370,9 +1373,9 @@
     },
     {
       "name": "UHF IPTV 1.100.0 Adfree Moe",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1764701364.a5841",
+      "bundleIdentifier": "com.shrubhub.moes.a1764701364.a5841",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "UHF IPTV 1.100.0 Adfree Moe for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/UHF_1.79.1_Adfree_Moe_Patched_1764701364.webp?v=1791318045.0",
       "versions": [
@@ -1387,9 +1390,9 @@
     },
     {
       "name": "Picsart Pro 30.5.1",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a3276",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a3276",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Picsart Pro 30.5.1 for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/static/icons/PicsArt_xlarge.webp?v=1791318045.0",
       "versions": [
@@ -1404,9 +1407,9 @@
     },
     {
       "name": "Photoroom 2026.33.01 Pro",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a9876",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a9876",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Photoroom 2026.33.01 Pro for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/static/icons/Photoroom_xlarge.webp?v=1791318045.0",
       "versions": [
@@ -1421,9 +1424,9 @@
     },
     {
       "name": "Youtube 21.32.4 Moe Multi 10.17 Stable",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757018667.a5902",
+      "bundleIdentifier": "com.shrubhub.moes.a1757018667.a5902",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Do not sign with ESign. Use a four-finger hold to open Moe Multi.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Youtube_20.37.3_Multi_2.7.5_Moe_Patched_1758409576.webp?v=1791318045.0",
       "versions": [
@@ -1438,9 +1441,9 @@
     },
     {
       "name": "YouTube 21.29.03 Moe YTPlus 5.2.2",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1784605762.a4997",
+      "bundleIdentifier": "com.shrubhub.moes.a1784605762.a4997",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "YouTube 21.29.03 Moe YTPlus 5.2.2 for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/YouTube_21.29.03_Moe_YTPlus_5.2.2_1784606462412751888.webp?v=1791318045.0",
       "versions": [
@@ -1455,9 +1458,9 @@
     },
     {
       "name": "YouTube 21.29.03 Moe YTPlus 5.2.1 Free",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1784605639.a7214",
+      "bundleIdentifier": "com.shrubhub.moes.a1784605639.a7214",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "YouTube 21.29.03 Moe YTPlus 5.2.1 Free for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/YouTube_21.29.03_Moe_YTPlus_5.2.1_Free_1784606462412642007.webp?v=1791318045.0",
       "versions": [
@@ -1472,9 +1475,9 @@
     },
     {
       "name": "YouTube 21.29.03 Moe YTK 5.9.7.2 not stable use 21.24",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1784605746.a8202",
+      "bundleIdentifier": "com.shrubhub.moes.a1784605746.a8202",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "YouTube 21.29.03 Moe YTK 5.9.7.2 not stable use 21.24 for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/YouTube_21.29.03_Moe_YTK_5.9.7.2_not_stable_use_21.24_1784606462412528807.webp?v=1791318045.0",
       "versions": [
@@ -1489,9 +1492,9 @@
     },
     {
       "name": "YouTube 21.29.03 Moe SY 2.0",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1784605684.a1911",
+      "bundleIdentifier": "com.shrubhub.moes.a1784605684.a1911",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "YouTube 21.29.03 Moe SY 2.0 for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/YouTube_21.29.03_Moe_SY_2.0_1784606462412180844.webp?v=1791318045.0",
       "versions": [
@@ -1506,9 +1509,9 @@
     },
     {
       "name": "YouTube 21.29.03 Moe Multi 10.16 Not as Stable as 21.24.3",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1784605662.a6921",
+      "bundleIdentifier": "com.shrubhub.moes.a1784605662.a6921",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Do not sign with ESign. Use a four-finger hold to open Moe Multi.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/YouTube_21.29.03_Moe_Multi_10.16_Not_as_Stable_as_21.24.3_1784606462412056763.webp?v=1791318045.0",
       "versions": [
@@ -1523,9 +1526,9 @@
     },
     {
       "name": "YouTube 21.29.03 Moe LRD 1.13 Cracked",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1784605622.a5146",
+      "bundleIdentifier": "com.shrubhub.moes.a1784605622.a5146",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "YouTube 21.29.03 Moe LRD 1.13 Cracked for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/YouTube_21.29.03_Moe_LRD_1.13_Cracked_1784606462411881682.webp?v=1791318045.0",
       "versions": [
@@ -1540,9 +1543,9 @@
     },
     {
       "name": "YouTube 21.24.3 Moe YouPro 0.3",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1783998879.a7271",
+      "bundleIdentifier": "com.shrubhub.moes.a1783998879.a7271",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "YouTube 21.24.3 Moe YouPro 0.3 for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/YouTube_21.28.3_Moe_YouPro_0.3_1784003426118058050.webp?v=1791318045.0",
       "versions": [
@@ -1557,9 +1560,9 @@
     },
     {
       "name": "YouTube 21.24.3 Moe YouMod 1.3.0",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1783998851.a7340",
+      "bundleIdentifier": "com.shrubhub.moes.a1783998851.a7340",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "YouTube 21.24.3 Moe YouMod 1.3.0 for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/YouTube_21.28.3_Moe_YouMod_1.3.0_1784003426117914849.webp?v=1791318045.0",
       "versions": [
@@ -1574,9 +1577,9 @@
     },
     {
       "name": "Youtube 21.24.3 Moe DLTube 2.16.3 Cracked",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1767418206.a7299",
+      "bundleIdentifier": "com.shrubhub.moes.a1767418206.a7299",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Youtube 21.24.3 Moe DLTube 2.16.3 Cracked for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Youtube_20.50.9_DL2.5_Cracked__1767418206.webp?v=1791318045.0",
       "versions": [
@@ -1591,9 +1594,9 @@
     },
     {
       "name": "12.3 Neofreebird X themed BHTwitter 6.0.3 theacrat build with working replies and posting natively",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1784255506.a1598",
+      "bundleIdentifier": "com.shrubhub.moes.a1784255506.a1598",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "12.3 Neofreebird X themed BHTwitter 6.0.3 theacrat build with working replies and posting natively for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/12.3_Neofreebird_X_themed_BHTwitter_6.0.3_theacrat_build_with_working_replies_and_posting_natively_1784255525711256561.webp?v=1791318045.0",
       "versions": [
@@ -1608,9 +1611,9 @@
     },
     {
       "name": "12.3 Neofreebird BHTwitter 6.0.3 theacrat build with working replies and posting natively",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1784255448.a3809",
+      "bundleIdentifier": "com.shrubhub.moes.a1784255448.a3809",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "12.3 Neofreebird BHTwitter 6.0.3 theacrat build with working replies and posting natively for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/12.3_Neofreebird_BHTwitter_6.0.3_theacrat_build_with_working_replies_and_posting_natively_1784255525710878118.webp?v=1791318045.0",
       "versions": [
@@ -1625,9 +1628,9 @@
     },
     {
       "name": "YouTube Music 9.26.2",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1784171284.a4620",
+      "bundleIdentifier": "com.shrubhub.moes.a1784171284.a4620",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "YouTube Music 9.26.2 for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/YouTube_Music_9.26.2_1784173597847920916.webp?v=1791318045.0",
       "versions": [
@@ -1642,9 +1645,9 @@
     },
     {
       "name": "Youtube 21.26.4 DLTube 2.16.4 Moe Patched",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757018539.a5457",
+      "bundleIdentifier": "com.shrubhub.moes.a1757018539.a5457",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Youtube 21.26.4 DLTube 2.16.4 Moe Patched for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Youtube_20.37.3_DLTube_2.16.1_Moe_Patched_1758409515.webp?v=1791318045.0",
       "versions": [
@@ -1659,9 +1662,9 @@
     },
     {
       "name": "MSGPlusX V1.1 MoePatched",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1781211729.a3820",
+      "bundleIdentifier": "com.shrubhub.moes.a1781211729.a3820",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "MSGPlusX V1.1 MoePatched for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/MSGPlusX_V1.1_MoePatched_1781213528326020815.webp?v=1791318045.0",
       "versions": [
@@ -1676,9 +1679,9 @@
     },
     {
       "name": "Cider Remote 3.1.1",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1779734967.a5927",
+      "bundleIdentifier": "com.shrubhub.moes.a1779734967.a5927",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Cider Remote 3.1.1 for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Cider_Remote_3.1.1_1779735003584273573.webp?v=1791318045.0",
       "versions": [
@@ -1693,9 +1696,9 @@
     },
     {
       "name": "Remodex 1.6",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1779210558.a6136",
+      "bundleIdentifier": "com.shrubhub.moes.a1779210558.a6136",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Remodex 1.6 for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Remodex_1.6_1779210586510278348.webp?v=1791318045.0",
       "versions": [
@@ -1710,9 +1713,9 @@
     },
     {
       "name": "X 11.89 Moe TwiGalaxy 1.13 Spoofed",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a3089",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a3089",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "X 11.89 Moe TwiGalaxy 1.13 Spoofed for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/X_1756969175.webp?v=1791318045.0",
       "versions": [
@@ -1727,9 +1730,9 @@
     },
     {
       "name": "X 11.89 Moe DL 2.1.6 Cracked Spoofed DL Cracked",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1767639400.a9026",
+      "bundleIdentifier": "com.shrubhub.moes.a1767639400.a9026",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "X 11.89 Moe DL 2.1.6 Cracked Spoofed DL Cracked for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/X_11.54_DL2.1.6_Cracked_1767639400.webp?v=1791318045.0",
       "versions": [
@@ -1744,9 +1747,9 @@
     },
     {
       "name": "X 11.89 Moe BH 4.4 Spoofed",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758407722.a2726",
+      "bundleIdentifier": "com.shrubhub.moes.a1758407722.a2726",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "X 11.89 Moe BH 4.4 Spoofed for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/X_11.22_BH_4.4_Moe_1758407722.webp?v=1791318045.0",
       "versions": [
@@ -1761,9 +1764,9 @@
     },
     {
       "name": "NeoFreeBird 11.89 Andrew and Moe Version Spoofed to 10.61 for posting",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1777693179.a8047",
+      "bundleIdentifier": "com.shrubhub.moes.a1777693179.a8047",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Tweak mainly made by my friend Andrew, a remade Neofreebird with a download manager and so much more. Hold down 3 finger...",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/NeoFreeBird_11.87_Andrew_Version_Spoofed_to_10.61_for_posting_1777693248113691510.webp?v=1791318045.0",
       "versions": [
@@ -1778,9 +1781,9 @@
     },
     {
       "name": "Facetune 26.9 Pro",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a3074",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a3074",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Facetune 26.9 Pro for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/static/icons/Facetune_xlarge.webp?v=1791318045.0",
       "versions": [
@@ -1795,9 +1798,9 @@
     },
     {
       "name": "NeoFreeBird 11.88 Andrew and Moe Version Not Spoofed With Liquid Glass",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1776188915.a1135",
+      "bundleIdentifier": "com.shrubhub.moes.a1776188915.a1135",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Tweak mainly made by my friend Andrew, a remade Neofreebird with a download manager and so much more. Hold down 3 finger...",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Twitter_11.82.1_Neofreebird_Test_IPA_with_working_posting_and_no_liquid_glass_and_toggles_fixed_1776188915.webp?v=1791318045.0",
       "versions": [
@@ -1812,9 +1815,9 @@
     },
     {
       "name": "Twitter 11.86 Neofreebird Latest with Custom Toggle Fix Spoofed",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a5792",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a5792",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Twitter 11.86 Neofreebird Latest with Custom Toggle Fix for iOS, listed on Moe's App Hub with version, file size, and install details. Linked App Store identity: X in News.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Twitter_1756496835.webp?v=1791318045.0",
       "versions": [
@@ -1829,9 +1832,9 @@
     },
     {
       "name": "Main Login Fix for X Twitter but Supports Multiple Accounts 9.67 NFB read description",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1769715272.a7026",
+      "bundleIdentifier": "com.shrubhub.moes.a1769715272.a7026",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Another Login Fix for X Twitter but Supports Multiple Accounts 9.67 NFB read description for iOS, listed on Moe's App Hu...",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Another_Login_Fix_for_X_but_Supports_Multiple_Accounts_9.67_NFB_read_description_1769715272.webp?v=1791318045.0",
       "versions": [
@@ -1846,9 +1849,9 @@
     },
     {
       "name": "Twitch 29.0 Tweach 2.3.1",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1776406804.a3230",
+      "bundleIdentifier": "com.shrubhub.moes.a1776406804.a3230",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Twitch 29.0 Tweach 2.3.1 is an iOS release entry for Twitch: Live Streaming on Moe's App Hub, with version, file size, icon, and install details.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Twitch_29.0_Tweach_2.3.1_1776407802257220280.webp?v=1791318045.0",
       "versions": [
@@ -1863,9 +1866,9 @@
     },
     {
       "name": "Twitch 29 Adfree Moe with control 0.0.2",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1768431327.a4203",
+      "bundleIdentifier": "com.shrubhub.moes.a1768431327.a4203",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "hold down with 3 fingers for 4 seconds to open the mod menu",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Twitch_27.7_Adfree_Moe_Zerobeef_tweak_1768431327.webp?v=1791318045.0",
       "versions": [
@@ -1880,9 +1883,9 @@
     },
     {
       "name": "Manic Emu 1.9.1 JIT FP Fix",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a5358",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a5358",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Manic Emu 1.9.1 JIT FP Fix is an iOS release entry for Manic EMU - Game Emulator on Moe's App Hub, with version, file size, icon, and install details.",
       "iconURL": "https://moe.mohkg1017.pro/static/icons/Manicemu_xlarge.webp?v=1791318045.0",
       "versions": [
@@ -1897,9 +1900,9 @@
     },
     {
       "name": "YTmusic 9.14 Ultimate 2.4.1",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a6920",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a6920",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "YTmusic 9.14 Ultimate 2.4.1 is an iOS release entry for YouTube Music on Moe's App Hub, with version, file size, icon, and install details.",
       "iconURL": "https://moe.mohkg1017.pro/static/icons/YouTube%20Music_xlarge.webp?v=1791318045.0",
       "versions": [
@@ -1914,9 +1917,9 @@
     },
     {
       "name": "Infuse 8.4.2 Plus 2.5",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a2941",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a2941",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Infuse 8.4.2 Plus 2.5 for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/static/icons/Infuse_xlarge.webp?v=1791318045.0",
       "versions": [
@@ -1931,9 +1934,9 @@
     },
     {
       "name": "Remodex 1.3 Pro",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1775161063.a6699",
+      "bundleIdentifier": "com.shrubhub.moes.a1775161063.a6699",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Remodex 1.3 Pro for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Remodex_1.3_Pro_1775161343511666914.webp?v=1791318045.0",
       "versions": [
@@ -1948,9 +1951,9 @@
     },
     {
       "name": "Carrot 6.5 Pro Moe with Working Widgets",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758405429.a2536",
+      "bundleIdentifier": "com.shrubhub.moes.a1758405429.a2536",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "requires the use of a custom entitlement file from your cert. so get your mobile provision, name it \"entitlements.text\" ...",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Carrot_6.3.1_Pro_Moe_1758405429.webp?v=1791318045.0",
       "versions": [
@@ -1965,9 +1968,9 @@
     },
     {
       "name": "X 11.75 DL 2.1.6 Moe",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758407754.a3125",
+      "bundleIdentifier": "com.shrubhub.moes.a1758407754.a3125",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "X 11.75 DL 2.1.6 Moe is an iOS release entry for X on Moe's App Hub, with version, file size, icon, and install details.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/X_11.22_DL_2.1.4_Moe_1758407754.webp?v=1791318045.0",
       "versions": [
@@ -1982,9 +1985,9 @@
     },
     {
       "name": "Soundcloud 8.52.1 Adfree",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a9581",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a9581",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Soundcloud 8.52.1 Adfree is an iOS release entry for SoundCloud: The Music You Love on Moe's App Hub, with version, file size, icon, and install details.",
       "iconURL": "https://moe.mohkg1017.pro/static/icons/SoundCloud_xlarge.webp?v=1791318045.0",
       "versions": [
@@ -1999,9 +2002,9 @@
     },
     {
       "name": "Litter Beta Run Codex on Phone Natively",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1772164553.a2455",
+      "bundleIdentifier": "com.shrubhub.moes.a1772164553.a2455",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Litter Beta Run Codex on Phone Natively for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Litter_Beta_Run_Codex_on_Phone_Natively__1772164553.webp?v=1791318045.0",
       "versions": [
@@ -2016,9 +2019,9 @@
     },
     {
       "name": "Captions 13.7.0 Pro Moe Patched",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757022116.a7071",
+      "bundleIdentifier": "com.shrubhub.moes.a1757022116.a7071",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Captions 13.7.0 Pro Moe Patched for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Captions_12.33.2_Pro_Moe_Patched_1757022116.webp?v=1791318045.0",
       "versions": [
@@ -2033,9 +2036,9 @@
     },
     {
       "name": "Google News Adfree 5.115 Mainstream legacy media",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a7562",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a7562",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Google News Adfree 5.115 Mainstream legacy media is an iOS release entry for Google News on Moe's App Hub, with version, file size, icon, and install details.",
       "iconURL": "https://moe.mohkg1017.pro/static/icons/GoogleNews_xlarge.webp?v=1791318045.0",
       "versions": [
@@ -2050,9 +2053,9 @@
     },
     {
       "name": "Satella Elite 2026 Hold with 2 fingers to open Menu",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1772074753.a1762",
+      "bundleIdentifier": "com.shrubhub.moes.a1772074753.a1762",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Satella Elite 2026 is a non-App-Store utility release on Moe's App Hub with version, file size, and usage details.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Satella_Elite_2026_Hold_with_2_fingers_to_open_Menu_1772074753.webp?v=1791318045.0",
       "versions": [
@@ -2067,9 +2070,9 @@
     },
     {
       "name": "Red Dead Redemption 2 Kamo Hacks",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1772060639.a8488",
+      "bundleIdentifier": "com.shrubhub.moes.a1772060639.a8488",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Red Dead Redemption 2 Kamo Hacks is a non-App-Store release entry on Moe's App Hub with version, file size, and install details.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Red_Dead_Redemption_2_Kamo_Hacks__1772060639.webp?v=1791318045.0",
       "versions": [
@@ -2084,9 +2087,9 @@
     },
     {
       "name": "Tiktok 43.9.0 DL 2.1.4 Moe",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757106738.a3197",
+      "bundleIdentifier": "com.shrubhub.moes.a1757106738.a3197",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Tiktok 43.9.0 DL 2.1.4 Moe is an iOS release entry for TikTok - Videos, Shop & LIVE on Moe's App Hub, with version, file size, icon, and install details.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Tiktok_41.5.0_DL2.1.3_Moe_Patched_1757106738.webp?v=1791318045.0",
       "versions": [
@@ -2101,9 +2104,9 @@
     },
     {
       "name": "Youtube 21.08.3 LRD 1.13 Moe",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757017764.a8118",
+      "bundleIdentifier": "com.shrubhub.moes.a1757017764.a8118",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Youtube 21.08.3 LRD 1.13 Moe is an iOS release entry for YouTube on Moe's App Hub, with version, file size, icon, and install details.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Youtube20.37.3_Tube_LRD_1.11_Moe_1758409597.webp?v=1791318045.0",
       "versions": [
@@ -2118,9 +2121,9 @@
     },
     {
       "name": "Fusion 1.0 appstore edition",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1772057507.a4682",
+      "bundleIdentifier": "com.shrubhub.moes.a1772057507.a4682",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Fusion 1.0 appstore edition for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Fusion_1.0_appstore_edition_1772057507.webp?v=1791318045.0",
       "versions": [
@@ -2135,9 +2138,9 @@
     },
     {
       "name": "Bitchat latest",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1772057135.a2174",
+      "bundleIdentifier": "com.shrubhub.moes.a1772057135.a2174",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Bitchat latest for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Bitchat_latest_1772057135.webp?v=1791318045.0",
       "versions": [
@@ -2152,9 +2155,9 @@
     },
     {
       "name": "Videoleap 2.81 Pro",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a6631",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a6631",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Videoleap 2.81 Pro is an iOS release entry for Videoleap: AI Video Editor on Moe's App Hub, with version, file size, icon, and install details.",
       "iconURL": "https://moe.mohkg1017.pro/static/icons/Videoleap_xlarge.webp?v=1791318045.0",
       "versions": [
@@ -2169,9 +2172,9 @@
     },
     {
       "name": "Photoleap 2.120 Pro",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a3909",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a3909",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Photoleap 2.120 Pro for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/static/icons/Photoleap_xlarge.webp?v=1791318045.0",
       "versions": [
@@ -2186,9 +2189,9 @@
     },
     {
       "name": "Tiktok 43.8.0 EOS Beta 10 Moe",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757106678.a9088",
+      "bundleIdentifier": "com.shrubhub.moes.a1757106678.a9088",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Tiktok 43.8.0 EOS Beta 10 Moe is an iOS release entry for TikTok - Videos, Shop & LIVE on Moe's App Hub, with version, file size, icon, and install details.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Tiktok_41.5.0_EOS_Beta10_Moe_Patched_1757106678.webp?v=1791318045.0",
       "versions": [
@@ -2203,9 +2206,9 @@
     },
     {
       "name": "Nicegram 2.4.1 TGExtra Latest Moe",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a7229",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a7229",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "hold down on ask a question to open tgmenu",
       "iconURL": "https://moe.mohkg1017.pro/static/icons/Nicegram_xlarge.webp?v=1791318045.0",
       "versions": [
@@ -2220,9 +2223,9 @@
     },
     {
       "name": "MovieBox Pro 15.5",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a4838",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a4838",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Review the MovieBox Pro 15.5 release details, including version 15.5, file size 80 MB, download options, and any source or App Store reference shown on this page.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/MovieBox_Pro_1756495712.webp?v=1791318045.0",
       "versions": [
@@ -2237,9 +2240,9 @@
     },
     {
       "name": "Tiktok 41.3.0 MoeMulti 6.6",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1764534729.a8043",
+      "bundleIdentifier": "com.shrubhub.moes.a1764534729.a8043",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Do not sign with ESign. Open Moe Multi by holding the Profile button or name, tapping the battery icon in Profile, or us...",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Tiktok_41.3.0_MoeMulti_3.3.0_with_working_RX_flags_1764534729.webp?v=1791318045.0",
       "versions": [
@@ -2254,9 +2257,9 @@
     },
     {
       "name": "Facebook 545 Glow 1.3.1",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1762922824.a3919",
+      "bundleIdentifier": "com.shrubhub.moes.a1762922824.a3919",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Facebook 545 Glow 1.3.1 is an iOS release entry for Facebook on Moe's App Hub, with version, file size, icon, and install details.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Facebook_539_Glow_1.3.1_1762922824.webp?v=1791318045.0",
       "versions": [
@@ -2271,9 +2274,9 @@
     },
     {
       "name": "Turrit 1.4.4 TGExtra Latest",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a1465",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a1465",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "hold down on ask turrit under settings to open tgmenu",
       "iconURL": "https://moe.mohkg1017.pro/static/icons/Turrit_xlarge.webp?v=1791318045.0",
       "versions": [
@@ -2288,9 +2291,9 @@
     },
     {
       "name": "Premade OLD Font Twitter Example Json or just read the BLOG For DIY",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1768769212.a1511",
+      "bundleIdentifier": "com.shrubhub.moes.a1768769212.a1511",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Premade OLD Font Twitter Example Json is a non-App-Store resource entry on Moe's App Hub with file size and setup details.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Premade_OLD_Font_Twitter_Example_Json_or_just_read_the_BLOG_For_DIY_1768769212.webp?v=1791318045.0",
       "versions": [
@@ -2305,9 +2308,9 @@
     },
     {
       "name": "X Login Fix IPA For X Read Instructions",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1765350182.a4738",
+      "bundleIdentifier": "com.shrubhub.moes.a1765350182.a4738",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Install this IPA, tap the circle, click enable login, then login like normal, after your logged in you can install a new...",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Login_Fix_IPA_For_X_Read_Instructions_1765350182.webp?v=1791318045.0",
       "versions": [
@@ -2322,9 +2325,9 @@
     },
     {
       "name": "MeloNX 2.2 JIT Enabled",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a8190",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a8190",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Review the MeloNX 2.2 JIT Enabled release details, including version 2.2, file size 80 MB, download options, and any source or App Store reference shown on this page.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/MeloNX_1756494992.webp?v=1791318045.0",
       "versions": [
@@ -2339,9 +2342,9 @@
     },
     {
       "name": "Apollo 1.15.11 Custom API 1.3.0 Glass",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1767045833.a8634",
+      "bundleIdentifier": "com.shrubhub.moes.a1767045833.a8634",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Apollo 1.15.11 Custom API 1.3.0 Glass for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Apollo_1.5.11_Custom_API_1.3.0_Glass_1767045833.webp?v=1791318045.0",
       "versions": [
@@ -2356,9 +2359,9 @@
     },
     {
       "name": "Apollo 1.15.11 Custom API 1.3.0",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1767045804.a9915",
+      "bundleIdentifier": "com.shrubhub.moes.a1767045804.a9915",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Apollo 1.15.11 Custom API 1.3.0 for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Apollo_1.5.11_Custom_API_1.3.0_1767045804.webp?v=1791318045.0",
       "versions": [
@@ -2373,9 +2376,9 @@
     },
     {
       "name": "iSTB 1.29.3 Moe Pro",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a3707",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a3707",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Sign with custom entitlements file in esign if you have issues",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Istb1.29.3Promoepatched_1766436441.webp?v=1791318045.0",
       "versions": [
@@ -2390,9 +2393,9 @@
     },
     {
       "name": "Itorrent 2.1.1-1",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a5344",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a5344",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Review the Itorrent 2.1.1-1 release details, including version 2.1.1-1, file size 80 MB, download options, and any source or App Store reference shown on this page.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Itorrent_1756494959.webp?v=1791318045.0",
       "versions": [
@@ -2407,9 +2410,9 @@
     },
     {
       "name": "iME 12.2.2 TGEXtra 1.7 Moe",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a9981",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a9981",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "iME 12.2.2 TGEXtra 1.7 Moe for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/static/icons/iMe_xlarge.webp?v=1791318045.0",
       "versions": [
@@ -2424,9 +2427,9 @@
     },
     {
       "name": "MUTube Adfree Youtube for Apple TV",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1765146640.a2144",
+      "bundleIdentifier": "com.shrubhub.moes.a1765146640.a2144",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "MUTube Adfree Youtube for Apple TV is an iOS release entry for YouTube on Moe's App Hub, with version, file size, icon, and install details.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/MUTube_Adfree_Youtube_for_Apple_TV_1765146640.webp?v=1791318045.0",
       "versions": [
@@ -2441,9 +2444,9 @@
     },
     {
       "name": "OldOS",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1765068916.a6877",
+      "bundleIdentifier": "com.shrubhub.moes.a1765068916.a6877",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "OldOS is a non-App-Store iOS release entry on Moe's App Hub with version, file size, icon, and install details.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/OldOS_1765068916.webp?v=1791318045.0",
       "versions": [
@@ -2458,9 +2461,9 @@
     },
     {
       "name": "InjectionIPA",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1765065649.a7669",
+      "bundleIdentifier": "com.shrubhub.moes.a1765065649.a7669",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "InjectionIPA is a non-App-Store iOS utility release on Moe's App Hub with version, file size, icon, and install details.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/InjectionIPA_1765065594.webp?v=1791318045.0",
       "versions": [
@@ -2475,9 +2478,9 @@
     },
     {
       "name": "IPTV Experts 9.1.3 Pro Moe",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1764736160.a2702",
+      "bundleIdentifier": "com.shrubhub.moes.a1764736160.a2702",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "IPTV Experts 9.1.3 Pro Moe for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/IPTV_Experts_9.1.2_Pro_Moe_1764736160.webp?v=1791318045.0",
       "versions": [
@@ -2492,9 +2495,9 @@
     },
     {
       "name": "Tiktok 41.3.0 RX 1.5.4 Last Tiktok Version with Comment Flags Working",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1762895401.a3201",
+      "bundleIdentifier": "com.shrubhub.moes.a1762895401.a3201",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Tiktok 41.3.0 RX 1.5.4 Last Tiktok Version with Comment Flags Working is an iOS release entry for TikTok - Videos, Shop & LIVE on Moe's App Hub, with version, file size, icon, and ...",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Tiktok_41.3.0_RX_1.4.5_Last_Tiktok_Version_with_Comment_Flags_Working_1762895401.webp?v=1791318045.0",
       "versions": [
@@ -2509,9 +2512,9 @@
     },
     {
       "name": "Youtube 20.10.4 YTPlus 5.2 Beta 4 Cyan Edition",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a5162",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a5162",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Youtube 20.10.4 YTPlus 5.2 Beta 4 Cyan Edition is an iOS release entry for YouTube on Moe's App Hub, with version, file size, icon, and install details.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Youtube_20.10.4_YTPlus5.2_Beta3_Cyan_Edition_%28super_stable%29_1758409530.webp?v=1791318045.0",
       "versions": [
@@ -2526,9 +2529,9 @@
     },
     {
       "name": "Swiftgram Crack Files 1.1-7 sourced from (https://jailrepo.initnil.com/)",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1763748503.a7455",
+      "bundleIdentifier": "com.shrubhub.moes.a1763748503.a7455",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Swiftgram Crack Files 1.1-7 sourced from (https://jailrepo.initnil.com/) is an iOS release entry for Swiftgram: Telegram mod client on Moe's App Hub, with version, file size, icon,...",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Swiftgram_Crack_Files_sourced_from__1763748503.webp?v=1791318045.0",
       "versions": [
@@ -2543,9 +2546,9 @@
     },
     {
       "name": "Phocus 3.0.7 Pro Moe",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a8847",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a8847",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Phocus 3.0.7 Pro Moe for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/static/icons/Phocus_xlarge.webp?v=1791318045.0",
       "versions": [
@@ -2560,9 +2563,9 @@
     },
     {
       "name": "Aloha 7.12 Pro Moe",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758404111.a1361",
+      "bundleIdentifier": "com.shrubhub.moes.a1758404111.a1361",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Aloha 7.12 Pro Moe for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Aloha_1758404093.webp?v=1791318045.0",
       "versions": [
@@ -2577,9 +2580,9 @@
     },
     {
       "name": "One4Wall 3.2.03 Pro Moe",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1762195646.a5917",
+      "bundleIdentifier": "com.shrubhub.moes.a1762195646.a5917",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "One4Wall 3.2.03 Pro Moe for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/One4Wall_3.2.03_Pro_Moe_1762195646.webp?v=1791318045.0",
       "versions": [
@@ -2594,9 +2597,9 @@
     },
     {
       "name": "LumaFusion 5.3.3 Pro",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1761765899.a3710",
+      "bundleIdentifier": "com.shrubhub.moes.a1761765899.a3710",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "LumaFusion 5.3.3 Pro for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/LumaFusion_1761765886.webp?v=1791318045.0",
       "versions": [
@@ -2611,9 +2614,9 @@
     },
     {
       "name": "Appcake 7.2.2 Cielogic edition",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a5459",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a5459",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "CieCake7.2.2 - Remove \"Certificate Error\" Popup & Fix Crashes - Download Paid Apps/Games/Apple Arcade - Turn on jailbrea...",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/app_app_2_1756144173.webp?v=1791318045.0",
       "versions": [
@@ -2628,9 +2631,9 @@
     },
     {
       "name": "Lightroom 11.00 Pro Moe",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758406872.a2325",
+      "bundleIdentifier": "com.shrubhub.moes.a1758406872.a2325",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Lightroom 11.00 Pro Moe for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Lightroom_1758406854.webp?v=1791318045.0",
       "versions": [
@@ -2645,9 +2648,9 @@
     },
     {
       "name": "Spatial Camera 1.6.5",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1760733088.a4290",
+      "bundleIdentifier": "com.shrubhub.moes.a1760733088.a4290",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Spatial Camera 1.6.5 for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Spatial_Camera_1.6.5_1760825244.webp?v=1791318045.0",
       "versions": [
@@ -2662,9 +2665,9 @@
     },
     {
       "name": "Pro Camera 26.0.2 IAP Unlocked",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1760733041.a6423",
+      "bundleIdentifier": "com.shrubhub.moes.a1760733041.a6423",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Pro Camera 26.0.2 IAP Unlocked for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Pro_Camera_26.0.2_IAP_Unlocked_1760825142.webp?v=1791318045.0",
       "versions": [
@@ -2679,9 +2682,9 @@
     },
     {
       "name": "IPSW Go 1.4.7",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1760733061.a7306",
+      "bundleIdentifier": "com.shrubhub.moes.a1760733061.a7306",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "IPSW Go 1.4.7 for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/IPSW_Go_1.4.7_1760733061.webp?v=1791318045.0",
       "versions": [
@@ -2696,9 +2699,9 @@
     },
     {
       "name": "Focus",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1760726513.a5908",
+      "bundleIdentifier": "com.shrubhub.moes.a1760726513.a5908",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Focus for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Focus_1760726513.webp?v=1791318045.0",
       "versions": [
@@ -2713,9 +2716,9 @@
     },
     {
       "name": "ChatOn AI 1.67 Pro",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1759872894.a2772",
+      "bundleIdentifier": "com.shrubhub.moes.a1759872894.a2772",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "login to activate subscription",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/ChatOn_AI_-_Chat_Bot_Assistant_1759872875.webp?v=1791318045.0",
       "versions": [
@@ -2730,9 +2733,9 @@
     },
     {
       "name": "Imgur 2025.09.02 Pro",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1759872622.a9445",
+      "bundleIdentifier": "com.shrubhub.moes.a1759872622.a9445",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Imgur 2025.09.02 Pro for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Imgur_Funny_Memes__GIF_Maker_1759872608.webp?v=1791318045.0",
       "versions": [
@@ -2747,9 +2750,9 @@
     },
     {
       "name": "Video Lite 6.2",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1759872586.a6602",
+      "bundleIdentifier": "com.shrubhub.moes.a1759872586.a6602",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Video Lite 6.2 for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Video_Lite_1759872554.webp?v=1791318045.0",
       "versions": [
@@ -2764,9 +2767,9 @@
     },
     {
       "name": "PocketMath 1.10.4 Pro Moe",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1759872538.a5622",
+      "bundleIdentifier": "com.shrubhub.moes.a1759872538.a5622",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "PocketMath 1.10.4 Pro Moe for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/PocketMath_-_AI_Math_Solver_1759872513.webp?v=1791318045.0",
       "versions": [
@@ -2781,9 +2784,9 @@
     },
     {
       "name": "Omni 1.2 Pro",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a1449",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a1449",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Omni 1.2 Pro for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/static/icons/Omni_xlarge.webp?v=1791318045.0",
       "versions": [
@@ -2798,9 +2801,9 @@
     },
     {
       "name": "Vidi 1.8.2 Pro Moe",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1759776528.a3822",
+      "bundleIdentifier": "com.shrubhub.moes.a1759776528.a3822",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Vidi 1.8.2 Pro Moe for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Vidi_1.8.2_Pro_Moe_1759776528.webp?v=1791318045.0",
       "versions": [
@@ -2815,9 +2818,9 @@
     },
     {
       "name": "Shadow Rocket 2.2.72 Pro Moe",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1759776437.a1342",
+      "bundleIdentifier": "com.shrubhub.moes.a1759776437.a1342",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Shadow Rocket 2.2.72 Pro Moe for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Shadow_Rocket_2.2.72_Pro_Moe_1759776437.webp?v=1791318045.0",
       "versions": [
@@ -2832,9 +2835,9 @@
     },
     {
       "name": "Epik 6.3.10",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a7255",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a7255",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Epik 6.3.10 for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/static/icons/EPIK_xlarge.webp?v=1791318045.0",
       "versions": [
@@ -2849,9 +2852,9 @@
     },
     {
       "name": "Coconote 2.15 Pro Moe",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758833504.a2273",
+      "bundleIdentifier": "com.shrubhub.moes.a1758833504.a2273",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Coconote 2.15 Pro Moe for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Coconote_2.15_Pro_Moe_1758833504.webp?v=1791318045.0",
       "versions": [
@@ -2866,9 +2869,9 @@
     },
     {
       "name": "Offline Music 3.6.9 Pro",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758833410.a3075",
+      "bundleIdentifier": "com.shrubhub.moes.a1758833410.a3075",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Offline Music 3.6.9 Pro for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Offline_Music_3.6.9_Pro_1758833410.webp?v=1791318045.0",
       "versions": [
@@ -2883,9 +2886,9 @@
     },
     {
       "name": "TuneInradio 40.1.0 pro",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758833360.a8953",
+      "bundleIdentifier": "com.shrubhub.moes.a1758833360.a8953",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "TuneInradio 40.1.0 pro is an iOS release entry for TuneIn Radio: Music & Sports on Moe's App Hub, with version, file size, icon, and install details.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/TuneInradio_40.1.0_pro__1758833360.webp?v=1791318045.0",
       "versions": [
@@ -2900,9 +2903,9 @@
     },
     {
       "name": "GlowUp 3.3.1 Pro",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758833320.a4139",
+      "bundleIdentifier": "com.shrubhub.moes.a1758833320.a4139",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "GlowUp 3.3.1 Pro for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/GlowUp_3.3.1_Pro__1758833320.webp?v=1791318045.0",
       "versions": [
@@ -2917,9 +2920,9 @@
     },
     {
       "name": "AudioEditor 5.69 Pro",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758833170.a2176",
+      "bundleIdentifier": "com.shrubhub.moes.a1758833170.a2176",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "AudioEditor 5.69 Pro for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/AudioEditor_5.69_Pro__1758833170.webp?v=1791318045.0",
       "versions": [
@@ -2934,9 +2937,9 @@
     },
     {
       "name": "Facebook Messenger 526 pro",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758759820.a7418",
+      "bundleIdentifier": "com.shrubhub.moes.a1758759820.a7418",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Facebook Messenger 526 pro for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Facebook_Messenger_526_pro__1758759820.webp?v=1791318045.0",
       "versions": [
@@ -2951,9 +2954,9 @@
     },
     {
       "name": "Six Pack Abs - Abs Workout",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758663047.a1537",
+      "bundleIdentifier": "com.shrubhub.moes.a1758663047.a1537",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Six Pack Abs - Abs Workout for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Six_Pack_Abs___Abs_Workout_1758663042.webp?v=1791318045.0",
       "versions": [
@@ -2968,9 +2971,9 @@
     },
     {
       "name": "Renovate AI",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758663011.a1964",
+      "bundleIdentifier": "com.shrubhub.moes.a1758663011.a1964",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Renovate AI for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Renovate_AI_1758663007.webp?v=1791318045.0",
       "versions": [
@@ -2985,9 +2988,9 @@
     },
     {
       "name": "Pedometer",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758662997.a9228",
+      "bundleIdentifier": "com.shrubhub.moes.a1758662997.a9228",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Pedometer for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Pedometer_1758662993.webp?v=1791318045.0",
       "versions": [
@@ -3002,9 +3005,9 @@
     },
     {
       "name": "ImagineArt",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758662983.a1185",
+      "bundleIdentifier": "com.shrubhub.moes.a1758662983.a1185",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "ImagineArt for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/ImagineArt_1758662979.webp?v=1791318045.0",
       "versions": [
@@ -3019,9 +3022,9 @@
     },
     {
       "name": "Calory Pro Moe",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758662968.a2643",
+      "bundleIdentifier": "com.shrubhub.moes.a1758662968.a2643",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Calory Pro Moe for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Calory_1758662948.webp?v=1791318045.0",
       "versions": [
@@ -3036,9 +3039,9 @@
     },
     {
       "name": "superagent",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758662912.a4340",
+      "bundleIdentifier": "com.shrubhub.moes.a1758662912.a4340",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "superagent for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/superagent_1758662904.webp?v=1791318045.0",
       "versions": [
@@ -3053,9 +3056,9 @@
     },
     {
       "name": "flipclock",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758662896.a3521",
+      "bundleIdentifier": "com.shrubhub.moes.a1758662896.a3521",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "flipclock for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/flipclock_1758662892.webp?v=1791318045.0",
       "versions": [
@@ -3070,9 +3073,9 @@
     },
     {
       "name": "Noteshelf 3 Pro",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758662883.a2687",
+      "bundleIdentifier": "com.shrubhub.moes.a1758662883.a2687",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Noteshelf 3 Pro for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Noteshelf_3_1758662865.webp?v=1791318045.0",
       "versions": [
@@ -3087,9 +3090,9 @@
     },
     {
       "name": "Windy Pro",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758662776.a2803",
+      "bundleIdentifier": "com.shrubhub.moes.a1758662776.a2803",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Windy Pro is an iOS release entry for Windy.app — Wind, Tides, Radar on Moe's App Hub, with version, file size, icon, and install details.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Windy.app_1758662350.webp?v=1791318045.0",
       "versions": [
@@ -3104,9 +3107,9 @@
     },
     {
       "name": "Lingokids",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758662330.a5747",
+      "bundleIdentifier": "com.shrubhub.moes.a1758662330.a5747",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Lingokids for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Lingokids_1758662311.webp?v=1791318045.0",
       "versions": [
@@ -3121,9 +3124,9 @@
     },
     {
       "name": "Shapr3D",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758662238.a2887",
+      "bundleIdentifier": "com.shrubhub.moes.a1758662238.a2887",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Shapr3D for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Shapr3D_1758662225.webp?v=1791318045.0",
       "versions": [
@@ -3138,9 +3141,9 @@
     },
     {
       "name": "Flightradargold 10.16 Pro",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758662127.a8996",
+      "bundleIdentifier": "com.shrubhub.moes.a1758662127.a8996",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Flightradargold 10.16 Pro for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Flightradar24_1758662098.webp?v=1791318045.0",
       "versions": [
@@ -3155,9 +3158,9 @@
     },
     {
       "name": "VEED Captions",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758662071.a6892",
+      "bundleIdentifier": "com.shrubhub.moes.a1758662071.a6892",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "IPA uploaded via Smart Upload: VEED Captions",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/VEED_Captions_1758662048.webp?v=1791318045.0",
       "versions": [
@@ -3172,9 +3175,9 @@
     },
     {
       "name": "LingoDeer Pro",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758661847.a2139",
+      "bundleIdentifier": "com.shrubhub.moes.a1758661847.a2139",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "LingoDeer Pro for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/LingoDeer_1758661839.webp?v=1791318045.0",
       "versions": [
@@ -3189,9 +3192,9 @@
     },
     {
       "name": "Elevate Pro",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758661813.a1975",
+      "bundleIdentifier": "com.shrubhub.moes.a1758661813.a1975",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Elevate Pro for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Elevate_1758661797.webp?v=1791318045.0",
       "versions": [
@@ -3206,9 +3209,9 @@
     },
     {
       "name": "Happy Scale Pro",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758661749.a2988",
+      "bundleIdentifier": "com.shrubhub.moes.a1758661749.a2988",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Happy Scale Pro for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Happy_Scale_1758661699.webp?v=1791318045.0",
       "versions": [
@@ -3223,9 +3226,9 @@
     },
     {
       "name": "Bend Pro",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758661650.a3925",
+      "bundleIdentifier": "com.shrubhub.moes.a1758661650.a3925",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Bend Pro for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Bend_1758661639.webp?v=1791318045.0",
       "versions": [
@@ -3240,9 +3243,9 @@
     },
     {
       "name": "Clarity Pro",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758661569.a2008",
+      "bundleIdentifier": "com.shrubhub.moes.a1758661569.a2008",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Clarity Pro for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Clarity_1758661543.webp?v=1791318045.0",
       "versions": [
@@ -3257,9 +3260,9 @@
     },
     {
       "name": "Goodnotes Pro",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758661523.a6940",
+      "bundleIdentifier": "com.shrubhub.moes.a1758661523.a6940",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Goodnotes Pro for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Goodnotes_1758661510.webp?v=1791318045.0",
       "versions": [
@@ -3274,9 +3277,9 @@
     },
     {
       "name": "Stndrd Pro",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758660713.a5514",
+      "bundleIdentifier": "com.shrubhub.moes.a1758660713.a5514",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Stndrd Pro for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Stndrd_Pro_1758661122.webp?v=1791318045.0",
       "versions": [
@@ -3291,9 +3294,9 @@
     },
     {
       "name": "TradingView 2.108 Pro Moe",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758661078.a5348",
+      "bundleIdentifier": "com.shrubhub.moes.a1758661078.a5348",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "TradingView 2.108 Pro Moe for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/TradingView_1758661061.webp?v=1791318045.0",
       "versions": [
@@ -3308,9 +3311,9 @@
     },
     {
       "name": "Tiny Decisions",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758660965.a1611",
+      "bundleIdentifier": "com.shrubhub.moes.a1758660965.a1611",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Tiny Decisions for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Tiny_Decisions_1758660927.webp?v=1791318045.0",
       "versions": [
@@ -3325,9 +3328,9 @@
     },
     {
       "name": "SnapEdit",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758660911.a5300",
+      "bundleIdentifier": "com.shrubhub.moes.a1758660911.a5300",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "SnapEdit for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/SnapEdit_1758660876.webp?v=1791318045.0",
       "versions": [
@@ -3342,9 +3345,9 @@
     },
     {
       "name": "Wallpapers Central Pro",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758660858.a6419",
+      "bundleIdentifier": "com.shrubhub.moes.a1758660858.a6419",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Wallpapers Central Pro is an iOS release entry for Wallpapers Central on Moe's App Hub, with version, file size, icon, and install details.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Wallpapers_Central_1758660842.webp?v=1791318045.0",
       "versions": [
@@ -3359,9 +3362,9 @@
     },
     {
       "name": "Fitbod",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758660825.a2784",
+      "bundleIdentifier": "com.shrubhub.moes.a1758660825.a2784",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Fitbod for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Fitbod_1758660817.webp?v=1791318045.0",
       "versions": [
@@ -3376,9 +3379,9 @@
     },
     {
       "name": "Plane Finder",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758660798.a7595",
+      "bundleIdentifier": "com.shrubhub.moes.a1758660798.a7595",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Plane Finder for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Plane_Finder_1758660789.webp?v=1791318045.0",
       "versions": [
@@ -3393,9 +3396,9 @@
     },
     {
       "name": "SNOW Pro",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758660766.a8390",
+      "bundleIdentifier": "com.shrubhub.moes.a1758660766.a8390",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "SNOW Pro for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/SNOW_Pro_1758660766.webp?v=1791318045.0",
       "versions": [
@@ -3410,9 +3413,9 @@
     },
     {
       "name": "Widgetsmith pro",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758660640.a3186",
+      "bundleIdentifier": "com.shrubhub.moes.a1758660640.a3186",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Widgetsmith pro is an iOS release entry for Widgetsmith on Moe's App Hub, with version, file size, icon, and install details.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Widgetsmith_1758660623.webp?v=1791318045.0",
       "versions": [
@@ -3427,9 +3430,9 @@
     },
     {
       "name": "Hevy Pro",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758660611.a6004",
+      "bundleIdentifier": "com.shrubhub.moes.a1758660611.a6004",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Hevy Pro for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Hevy_1758660600.webp?v=1791318045.0",
       "versions": [
@@ -3444,9 +3447,9 @@
     },
     {
       "name": "CodeSnack IDE",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758660579.a4060",
+      "bundleIdentifier": "com.shrubhub.moes.a1758660579.a4060",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "CodeSnack IDE for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/CodeSnack_IDE_1758660570.webp?v=1791318045.0",
       "versions": [
@@ -3461,9 +3464,9 @@
     },
     {
       "name": "VSCO 441.0.1 Pro",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758660348.a6150",
+      "bundleIdentifier": "com.shrubhub.moes.a1758660348.a6150",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "VSCO 441.0.1 Pro for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/VSCO_1758660331.webp?v=1791318045.0",
       "versions": [
@@ -3478,9 +3481,9 @@
     },
     {
       "name": "TFLinks",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758516433.a5039",
+      "bundleIdentifier": "com.shrubhub.moes.a1758516433.a5039",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "TFLinks is a non-App-Store iOS utility release on Moe's App Hub with version, file size, icon, and install details.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/TFLinks_1758516385.webp?v=1791318045.0",
       "versions": [
@@ -3495,9 +3498,9 @@
     },
     {
       "name": "LiveContainer",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758516364.a8817",
+      "bundleIdentifier": "com.shrubhub.moes.a1758516364.a8817",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "LiveContainer is a non-App-Store iOS utility release on Moe's App Hub with version, file size, icon, and install details.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/LiveContainer_1758516302.webp?v=1791318045.0",
       "versions": [
@@ -3512,9 +3515,9 @@
     },
     {
       "name": "Stik Debug 2.2.2",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1758407187.a7956",
+      "bundleIdentifier": "com.shrubhub.moes.a1758407187.a7956",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Stik Debug 2.2.2 is a non-App-Store debug release on Moe's App Hub with version, file size, icon, and install details.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/StikDebug_1758407170.webp?v=1791318045.0",
       "versions": [
@@ -3529,9 +3532,9 @@
     },
     {
       "name": "Postbox",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a6318",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a6318",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Postbox for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Postbox_1756497031.webp?v=1791318045.0",
       "versions": [
@@ -3546,9 +3549,9 @@
     },
     {
       "name": "Keka",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a2712",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a2712",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Keka for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/static/icons/Keka_xlarge.webp?v=1791318045.0",
       "versions": [
@@ -3563,9 +3566,9 @@
     },
     {
       "name": "Feather",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a7945",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a7945",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Feather for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Feather_icon.webp?v=1791318045.0",
       "versions": [
@@ -3580,9 +3583,9 @@
     },
     {
       "name": "Vpn Superx",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a8345",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a8345",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Vpn Superx for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/static/icons/Vpn%20Superx_xlarge.webp?v=1791318045.0",
       "versions": [
@@ -3597,9 +3600,9 @@
     },
     {
       "name": "Vpn",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a5851",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a5851",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Vpn for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/static/icons/Vpn_xlarge.webp?v=1791318045.0",
       "versions": [
@@ -3614,9 +3617,9 @@
     },
     {
       "name": "Vinegar",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a6498",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a6498",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Vinegar for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/static/icons/Vinegar_xlarge.webp?v=1791318045.0",
       "versions": [
@@ -3631,9 +3634,9 @@
     },
     {
       "name": "Unzip5.13",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a4719",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a4719",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Unzip5.13 for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/static/icons/Unzip_xlarge.webp?v=1791318045.0",
       "versions": [
@@ -3648,9 +3651,9 @@
     },
     {
       "name": "Twitch",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a1558",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a1558",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Twitch is an iOS release entry for Twitch: Live Streaming on Moe's App Hub, with version, file size, icon, and install details.",
       "iconURL": "https://moe.mohkg1017.pro/static/icons/Twitch_xlarge.webp?v=1791318045.0",
       "versions": [
@@ -3665,9 +3668,9 @@
     },
     {
       "name": "Syfer",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a9382",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a9382",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Syfer for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/static/icons/Syfer_xlarge.webp?v=1791318045.0",
       "versions": [
@@ -3682,9 +3685,9 @@
     },
     {
       "name": "Polarr",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a1682",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a1682",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Polarr for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/static/icons/Polarr_xlarge.webp?v=1791318045.0",
       "versions": [
@@ -3699,9 +3702,9 @@
     },
     {
       "name": "Goblin Tools",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a2543",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a2543",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Goblin Tools for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/static/icons/Goblin%20Tools_xlarge.webp?v=1791318045.0",
       "versions": [
@@ -3716,9 +3719,9 @@
     },
     {
       "name": "FreeYourMusic",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a5910",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a5910",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "FreeYourMusic for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/static/icons/FreeYourMusic_xlarge.webp?v=1791318045.0",
       "versions": [
@@ -3733,9 +3736,9 @@
     },
     {
       "name": "Appgroupcheck",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a6984",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a6984",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Appgroupcheck for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/app_app_3_1756145368.webp?v=1791318045.0",
       "versions": [
@@ -3750,9 +3753,9 @@
     },
     {
       "name": "Fusion 0.1.0 Build 123 (Latest from testflight)",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a8694",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a8694",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Fusion 0.1.0 Build 123 (Latest from testflight)(Thank you YGB)",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Fusionapp101_1757012955.webp?v=1791318045.0",
       "versions": [
@@ -3767,9 +3770,9 @@
     },
     {
       "name": "Intentchat TGEXTRA",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a6635",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a6635",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Intentchat TGEXTRA is a non-App-Store iOS release on Moe's App Hub with version, file size, icon, and install details.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Lingogram_TGEXTRA_1756710278.webp?v=1791318045.0",
       "versions": [
@@ -3784,9 +3787,9 @@
     },
     {
       "name": "Theostipsv1.0",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a1941",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a1941",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Theostipsv1.0 for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Theostipsv1.0_1756497003.webp?v=1791318045.0",
       "versions": [
@@ -3801,9 +3804,9 @@
     },
     {
       "name": "Thunder Vpn 10",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a3917",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a3917",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Thunder Vpn 10 for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Thunder_Vpn_10_1756496852.webp?v=1791318045.0",
       "versions": [
@@ -3818,9 +3821,9 @@
     },
     {
       "name": "Vpnphantom",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a4528",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a4528",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Vpnphantom for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Vpnphantom_1756496747.webp?v=1791318045.0",
       "versions": [
@@ -3835,9 +3838,9 @@
     },
     {
       "name": "Xs",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a7753",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a7753",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Xs for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Xs_1756496702.webp?v=1791318045.0",
       "versions": [
@@ -3852,9 +3855,9 @@
     },
     {
       "name": "Proshotv9.5.6Promoepatched",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a2775",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a2775",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Smart uploaded app: Proshotv9.5.6Promoepatched",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Proshotv9.5.6Promoepatched_1756496394.webp?v=1791318045.0",
       "versions": [
@@ -3869,9 +3872,9 @@
     },
     {
       "name": "MoeSports",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a2834",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a2834",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "MoeSports2.2.ipa",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/MoeSports_1756496131.webp?v=1791318045.0",
       "versions": [
@@ -3886,9 +3889,9 @@
     },
     {
       "name": "Ksign",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a7718",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a7718",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Ksignlatest",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Ksign_1756494976.webp?v=1791318045.0",
       "versions": [
@@ -3903,9 +3906,9 @@
     },
     {
       "name": "eSign",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a9548",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a9548",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "eSign for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/eSign_1756494924.webp?v=1791318045.0",
       "versions": [
@@ -3920,9 +3923,9 @@
     },
     {
       "name": "Keychain Clean",
-      "bundleIdentifier": "com.zoinkdoggie94.moes.a1757008016.a8038",
+      "bundleIdentifier": "com.shrubhub.moes.a1757008016.a8038",
       "developerName": "Moe's App Hub",
-      "subtitle": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
       "localizedDescription": "Keychain Clean for iOS.",
       "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Keychain_Clean_1756494896.webp?v=1791318045.0",
       "versions": [
@@ -3936,5 +3939,16 @@
       ]
     }
   ],
-  "news": []
+  "news": [],
+  "META": {
+    "repoName": "Moe's App Hub — Shrubbery",
+    "repoIcon": "https://moe.mohkg1017.pro/apple-touch-icon.png?v=1791318045.0",
+    "author": "Shrubbery",
+    "team": "ShrubHub",
+    "maintainer": "Shrubbery / ShrubHub",
+    "originalCatalog": "Moe's App Hub",
+    "originalCatalogURL": "https://moe.mohkg1017.pro",
+    "repository": "https://github.com/zoinkdoggie94/moes",
+    "generatedAt": "2026-10-07T08:04:55Z"
+  }
 }
