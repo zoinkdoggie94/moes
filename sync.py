@@ -1,71 +1,47 @@
 #!/usr/bin/env python3
 
-import hashlib
 import json
+import math
 import re
 import sys
 import time
-from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
-from functools import lru_cache
 from pathlib import Path
-from typing import Any
 from urllib.parse import parse_qs, urljoin, urlparse
 
-import requests
-from bs4 import BeautifulSoup, Tag
+from bs4 import BeautifulSoup
+from curl_cffi import requests
 
 
 BASE_URL = "https://moe.mohkg1017.pro"
+SOURCE_URL = "https://raw.githubusercontent.com/zoinkdoggie94/moes/main/apps.json"
 
 OUTPUT_FILE = Path("apps.json")
 
+REQUEST_TIMEOUT = 40
+PAGE_DELAY_SECONDS = 1.25
+MAX_RETRIES = 5
 MAX_PAGES = 100
-MAX_WORKERS = 8
-REQUEST_TIMEOUT = 35
-MAX_VERSIONS_PER_APP = 10
+MAX_VERSIONS_PER_APP = 5
 
-
-session = requests.Session()
-
-session.headers.update(
-    {
-        "User-Agent": (
-            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-            "AppleWebKit/537.36 (KHTML, like Gecko) "
-            "Chrome/140.0 Safari/537.36 "
-            "ShrubMoeSource/1.0"
-        ),
-        "Accept": (
-            "text/html,application/xhtml+xml,application/xml;q=0.9,"
-            "application/json;q=0.8,*/*;q=0.7"
-        ),
-        "Accept-Language": "en-US,en;q=0.9",
-        "Cache-Control": "no-cache",
-    }
+USER_AGENT = (
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+    "AppleWebKit/605.1.15 (KHTML, like Gecko) "
+    "Version/17.0 Safari/605.1.15"
 )
 
-
-APP_PATH_RE = re.compile(
-    r"^/app/(app_\d+_\d+)(?:/)?$",
+APP_ID_RE = re.compile(
+    r"/app/(app_(\d+)_(\d+))",
     re.IGNORECASE,
 )
 
-APPLE_ID_RE = re.compile(
-    r"/id(\d+)(?:[/?#]|$)",
+COUNT_RE = re.compile(
+    r"Showing\s+(\d+)\s+of\s+(\d+)\s+apps",
     re.IGNORECASE,
 )
 
 SIZE_RE = re.compile(
-    r"([0-9]+(?:\.[0-9]+)?)\s*(KB|MB|GB|TB)",
-    re.IGNORECASE,
-)
-
-UPDATED_RE = re.compile(
-    r"\bUpdated\s+"
-    r"([A-Z][a-z]{2,8})\s+"
-    r"(\d{1,2})"
-    r"(?:,?\s+(\d{4}))?",
+    r"([0-9]+(?:\.[0-9]+)?)\s*(B|KB|MB|GB|TB)",
     re.IGNORECASE,
 )
 
@@ -74,57 +50,113 @@ def log(message: str) -> None:
     print(message, flush=True)
 
 
-def fetch(
-    url: str,
-    tries: int = 4,
-) -> requests.Response:
+def make_session():
+    session = requests.Session(
+        impersonate="chrome"
+    )
+
+    session.headers.update(
+        {
+            "User-Agent": USER_AGENT,
+            "Accept-Language": "en-US,en;q=0.9",
+            "Referer": BASE_URL + "/",
+        }
+    )
+
+    return session
+
+
+session = make_session()
+
+
+def fetch_page(page: int) -> str:
+    global session
+
     last_error = None
 
-    for attempt in range(tries):
+    for attempt in range(
+        1,
+        MAX_RETRIES + 1,
+    ):
         try:
             response = session.get(
-                url,
+                BASE_URL + "/",
+                params={"page": page},
                 timeout=REQUEST_TIMEOUT,
-                allow_redirects=True,
             )
 
-            if response.status_code == 429:
-                raise RuntimeError(
-                    f"Rate limited by {url}"
+            if response.status_code == 403:
+                log(
+                    f"Page {page}: got HTTP 403 "
+                    f"(attempt {attempt}/{MAX_RETRIES})"
                 )
 
-            if response.status_code >= 500:
-                raise RuntimeError(
-                    f"Server returned HTTP "
-                    f"{response.status_code}: {url}"
+                session = make_session()
+
+                if attempt < MAX_RETRIES:
+                    time.sleep(
+                        min(
+                            10,
+                            1.5 * attempt,
+                        )
+                    )
+                    continue
+
+            if response.status_code == 429:
+                log(
+                    f"Page {page}: rate limited "
+                    f"(attempt {attempt}/{MAX_RETRIES})"
                 )
+
+                if attempt < MAX_RETRIES:
+                    time.sleep(
+                        min(
+                            20,
+                            3 * attempt,
+                        )
+                    )
+                    continue
 
             response.raise_for_status()
 
-            return response
+            if not response.text.strip():
+                raise RuntimeError(
+                    "Moe returned an empty page"
+                )
+
+            return response.text
 
         except Exception as exc:
             last_error = exc
 
-            if attempt + 1 >= tries:
+            if attempt >= MAX_RETRIES:
                 break
 
             delay = min(
-                8,
-                1.25 * (2 ** attempt),
+                15,
+                1.5 * (2 ** (attempt - 1)),
             )
+
+            log(
+                f"Page {page}: request failed: {exc}"
+            )
+
+            log(
+                f"Retrying in {delay:.1f}s..."
+            )
+
+            session = make_session()
 
             time.sleep(delay)
 
     raise RuntimeError(
-        f"Failed to fetch {url}: "
+        f"Failed to fetch Moe page {page} "
+        f"after {MAX_RETRIES} attempts: "
         f"{last_error}"
     )
 
 
-def clean_text(
-    value: Any,
-) -> str:
+def clean_text(value) -> str:
     if value is None:
         return ""
 
@@ -135,38 +167,26 @@ def clean_text(
     ).strip()
 
 
-def absolute_url(
-    url: str,
-) -> str:
+def absolute_url(url: str) -> str:
     if not url:
         return ""
 
     return urljoin(
         BASE_URL + "/",
-        url.strip(),
+        url,
     )
 
 
-def get_host(
-    url: str,
-) -> str:
-    try:
-        return urlparse(url).netloc.lower()
-    except Exception:
-        return ""
+def parse_size_bytes(text: str) -> int:
+    if not text:
+        return 0
 
-
-def parse_size_bytes(
-    text: str,
-) -> int:
-    match = SIZE_RE.search(
-        text or ""
-    )
+    match = SIZE_RE.search(text)
 
     if not match:
         return 0
 
-    amount = float(
+    value = float(
         match.group(1)
     )
 
@@ -176,6 +196,7 @@ def parse_size_bytes(
     )
 
     multipliers = {
+        "B": 1,
         "KB": 1024,
         "MB": 1024 ** 2,
         "GB": 1024 ** 3,
@@ -183,72 +204,14 @@ def parse_size_bytes(
     }
 
     return int(
-        amount *
+        value *
         multipliers[unit]
     )
 
 
-def parse_update_date(
-    text: str,
-) -> str:
-    today = (
-        datetime
-        .now(timezone.utc)
-        .date()
-    )
-
-    match = UPDATED_RE.search(
-        text or ""
-    )
-
-    if not match:
-        return today.isoformat()
-
-    month_name = match.group(1)
-    day = match.group(2)
-    year_text = match.group(3)
-
-    year = (
-        int(year_text)
-        if year_text
-        else today.year
-    )
-
-    parsed = None
-
-    for fmt in (
-        "%b %d %Y",
-        "%B %d %Y",
-    ):
-        try:
-            parsed = datetime.strptime(
-                f"{month_name} {day} {year}",
-                fmt,
-            ).date()
-
-            break
-
-        except ValueError:
-            continue
-
-    if parsed is None:
-        return today.isoformat()
-
-    if (
-        not year_text
-        and parsed > today
-        and (parsed - today).days > 45
-    ):
-        parsed = parsed.replace(
-            year=year - 1
-        )
-
-    return parsed.isoformat()
-
-
-def google_drive_file_id(
+def extract_google_drive_id(
     url: str,
-) -> str | None:
+):
     if not url:
         return None
 
@@ -263,30 +226,20 @@ def google_drive_file_id(
     ):
         return None
 
-    match = re.search(
-        r"/file/d/([^/?#]+)",
-        parsed.path,
-    )
-
-    if match:
-        return match.group(1)
-
-    match = re.search(
-        r"/d/([^/?#]+)",
-        parsed.path,
-    )
-
-    if match:
-        return match.group(1)
-
     query = parse_qs(
         parsed.query
     )
 
-    ids = query.get("id")
+    if query.get("id"):
+        return query["id"][0]
 
-    if ids:
-        return ids[0]
+    match = re.search(
+        r"/(?:file/)?d/([^/?#]+)",
+        parsed.path,
+    )
+
+    if match:
+        return match.group(1)
 
     return None
 
@@ -294,19 +247,17 @@ def google_drive_file_id(
 def normalize_download_url(
     url: str,
 ) -> str:
-    if not url:
-        return ""
-
     url = absolute_url(url)
 
-    file_id = google_drive_file_id(
+    drive_id = extract_google_drive_id(
         url
     )
 
-    if file_id:
+    if drive_id:
         return (
             "https://drive.usercontent.google.com/"
-            f"download?id={file_id}"
+            "download"
+            f"?id={drive_id}"
             "&export=download"
             "&confirm=t"
         )
@@ -314,787 +265,389 @@ def normalize_download_url(
     return url
 
 
-def is_download_url(
-    url: str,
-) -> bool:
-    if not url:
-        return False
-
-    host = get_host(url)
-
-    lower_url = url.lower()
-
-    return (
-        lower_url.endswith(".ipa")
-        or
-        ".ipa?" in lower_url
-        or
-        "drive.google.com" in host
-        or
-        "drive.usercontent.google.com" in host
-        or
-        "drive.proton.me" in host
+def parse_catalog_count(
+    html: str,
+):
+    soup = BeautifulSoup(
+        html,
+        "html.parser",
     )
 
-
-def is_app_store_url(
-    url: str,
-) -> bool:
-    return (
-        "apps.apple.com"
-        in get_host(url)
+    text = soup.get_text(
+        " ",
+        strip=True,
     )
 
+    match = COUNT_RE.search(text)
 
-def find_card(
-    detail_link: Tag,
-) -> Tag | None:
-    node = detail_link
+    if not match:
+        return None, None
 
-    for _ in range(10):
-        parent = node.parent
+    per_page = int(
+        match.group(1)
+    )
 
-        if not isinstance(
-            parent,
-            Tag,
-        ):
-            break
+    total = int(
+        match.group(2)
+    )
 
-        node = parent
+    if per_page <= 0:
+        return total, None
 
-        anchors = node.find_all(
-            "a",
-            href=True,
-        )
-
-        has_detail = False
-        has_download = False
-
-        for anchor in anchors:
-            href = absolute_url(
-                str(
-                    anchor.get(
-                        "href",
-                        "",
-                    )
-                )
-            )
-
-            path = urlparse(
-                href
-            ).path
-
-            if APP_PATH_RE.match(
-                path
-            ):
-                has_detail = True
-
-            if is_download_url(
-                href
-            ):
-                has_download = True
-
-        if (
-            has_detail
-            and has_download
-        ):
-            return node
-
-    return None
+    return total, per_page
 
 
-def discover_catalog():
-    discovered = {}
+def max_pagination_page(
+    html: str,
+) -> int:
+    soup = BeautifulSoup(
+        html,
+        "html.parser",
+    )
 
-    empty_pages = 0
+    maximum = 1
 
-    for page in range(
-        1,
-        MAX_PAGES + 1,
+    for anchor in soup.find_all(
+        "a",
+        href=True,
     ):
-        if page == 1:
-            url = BASE_URL + "/"
-        else:
-            url = (
-                BASE_URL +
-                f"/?page={page}"
+        href = str(
+            anchor.get(
+                "href",
+                "",
             )
-
-        response = fetch(url)
-
-        soup = BeautifulSoup(
-            response.text,
-            "html.parser",
         )
 
-        page_app_ids = set()
-
-        anchors = soup.find_all(
-            "a",
-            href=True,
-        )
-
-        for anchor in anchors:
-            href = absolute_url(
-                str(
-                    anchor.get(
-                        "href",
-                        "",
-                    )
-                )
-            )
-
+        try:
             parsed = urlparse(
-                href
+                absolute_url(href)
             )
 
-            match = APP_PATH_RE.match(
-                parsed.path
+            query = parse_qs(
+                parsed.query
             )
 
-            if not match:
+            values = query.get(
+                "page"
+            )
+
+            if not values:
                 continue
 
-            app_id = match.group(1)
-
-            page_app_ids.add(
-                app_id
+            page = int(
+                values[0]
             )
 
-            record = discovered.setdefault(
-                app_id,
-                {
-                    "app_id": app_id,
-                    "detail_url": (
-                        f"{BASE_URL}/"
-                        f"app/{app_id}"
-                    ),
-                    "app_store_url": "",
-                    "download_url": "",
-                    "icon_url": "",
-                },
+            maximum = max(
+                maximum,
+                page,
             )
 
-            card = find_card(
-                anchor
+        except Exception:
+            continue
+
+    return maximum
+
+
+def make_bundle_identifier(
+    app_id: str,
+) -> str:
+    match = re.fullmatch(
+        r"app_(\d+)_(\d+)",
+        app_id,
+    )
+
+    if not match:
+        safe = re.sub(
+            r"[^A-Za-z0-9.-]",
+            "-",
+            app_id,
+        )
+
+        return (
+            "com.zoinkdoggie94."
+            f"moes.{safe}"
+        )
+
+    return (
+        "com.zoinkdoggie94.moes."
+        f"a{match.group(1)}."
+        f"a{match.group(2)}"
+    )
+
+
+def timestamp_to_date(
+    timestamp: int,
+) -> str:
+    try:
+        return (
+            datetime
+            .fromtimestamp(
+                timestamp,
+                tz=timezone.utc,
+            )
+            .date()
+            .isoformat()
+        )
+
+    except Exception:
+        return (
+            datetime
+            .now(timezone.utc)
+            .date()
+            .isoformat()
+        )
+
+
+def parse_app_cards(
+    html: str,
+):
+    soup = BeautifulSoup(
+        html,
+        "html.parser",
+    )
+
+    cards = []
+
+    for article in soup.select(
+        "article.app-card"
+    ):
+        detail_link = article.select_one(
+            "a.app-card-open-link"
+        )
+
+        if detail_link is None:
+            continue
+
+        detail_href = str(
+            detail_link.get(
+                "href",
+                "",
+            )
+        )
+
+        id_match = APP_ID_RE.search(
+            detail_href
+        )
+
+        if not id_match:
+            continue
+
+        app_id = id_match.group(1)
+
+        download_link = article.select_one(
+            "a.download-link"
+        )
+
+        if download_link is None:
+            continue
+
+        download_url = clean_text(
+            download_link.get(
+                "href",
+                "",
+            )
+        )
+
+        if not download_url:
+            continue
+
+        name = clean_text(
+            article.get(
+                "data-name",
+                "",
+            )
+        )
+
+        if not name:
+            heading = article.select_one(
+                "h2, h3, .app-name, .app-title"
             )
 
-            if card is None:
-                continue
-
-            for card_anchor in card.find_all(
-                "a",
-                href=True,
-            ):
-                candidate = absolute_url(
-                    str(
-                        card_anchor.get(
-                            "href",
-                            "",
-                        )
+            if heading:
+                name = clean_text(
+                    heading.get_text(
+                        " ",
+                        strip=True,
                     )
                 )
 
-                if (
-                    is_app_store_url(candidate)
-                    and
-                    not record["app_store_url"]
-                ):
-                    record[
-                        "app_store_url"
-                    ] = candidate
+        if not name:
+            name = app_id
 
-                if (
-                    is_download_url(candidate)
-                    and
-                    not record["download_url"]
-                ):
-                    record[
-                        "download_url"
-                    ] = candidate
+        try:
+            data_modified = int(
+                article.get(
+                    "data-modified",
+                    "0",
+                )
+                or 0
+            )
 
-            image = card.find(
+        except Exception:
+            data_modified = 0
+
+        icon_url = ""
+
+        icon = article.select_one(
+            ".app-icon img"
+        )
+
+        if icon is None:
+            icon = article.find(
                 "img",
                 src=True,
             )
 
-            if (
-                image
-                and
-                not record["icon_url"]
-            ):
-                record["icon_url"] = (
-                    absolute_url(
-                        str(
-                            image.get(
-                                "src",
-                                "",
-                            )
-                        )
-                    )
-                )
-
-        log(
-            f"Page {page}: "
-            f"{len(page_app_ids)} apps "
-            f"| total {len(discovered)}"
-        )
-
-        if page_app_ids:
-            empty_pages = 0
-        else:
-            empty_pages += 1
-
-        next_page = page + 1
-
-        has_next = False
-
-        for anchor in anchors:
-            href = str(
-                anchor.get(
-                    "href",
-                    "",
-                )
-            )
-
-            if (
-                f"page={next_page}"
-                in href
-            ):
-                has_next = True
-                break
-
-        if (
-            page > 1
-            and page_app_ids
-            and not has_next
-        ):
-            break
-
-        if empty_pages >= 2:
-            break
-
-    if not discovered:
-        raise RuntimeError(
-            "Found zero apps. "
-            "Refusing to overwrite apps.json."
-        )
-
-    return discovered
-
-
-def meta_content(
-    soup: BeautifulSoup,
-    *selectors,
-) -> str:
-    for attribute, value in selectors:
-        tag = soup.find(
-            "meta",
-            attrs={
-                attribute: value,
-            },
-        )
-
-        if (
-            tag
-            and
-            tag.get("content")
-        ):
-            return clean_text(
-                tag.get("content")
-            )
-
-    return ""
-
-
-def extract_name(
-    soup: BeautifulSoup,
-    fallback: str,
-) -> str:
-    h1 = soup.find("h1")
-
-    if h1:
-        name = clean_text(
-            h1.get_text(
-                " ",
-                strip=True,
-            )
-        )
-
-        if name:
-            return name
-
-    og_title = meta_content(
-        soup,
-        (
-            "property",
-            "og:title",
-        ),
-    )
-
-    if og_title:
-        return og_title
-
-    title = soup.find(
-        "title"
-    )
-
-    if title:
-        text = clean_text(
-            title.get_text(
-                " ",
-                strip=True,
-            )
-        )
-
-        if text:
-            return text
-
-    return fallback
-
-
-def extract_description(
-    soup: BeautifulSoup,
-    name: str,
-) -> str:
-    headings = soup.find_all(
-        re.compile(
-            r"^h[1-6]$"
-        )
-    )
-
-    for heading in headings:
-        heading_text = clean_text(
-            heading.get_text(
-                " ",
-                strip=True,
-            )
-        ).lower()
-
-        if heading_text != "about":
-            continue
-
-        siblings = heading.find_all_next(
-            limit=12
-        )
-
-        for sibling in siblings:
-            if sibling is heading:
-                continue
-
-            if (
-                sibling.name
-                and
-                re.match(
-                    r"^h[1-6]$",
-                    sibling.name,
-                )
-            ):
-                break
-
-            if sibling.name not in {
-                "p",
-                "div",
-                "span",
-            }:
-                continue
-
-            text = clean_text(
-                sibling.get_text(
-                    " ",
-                    strip=True,
-                )
-            )
-
-            if (
-                len(text) >= 8
-                and
-                "all rights reserved"
-                not in text.lower()
-            ):
-                return text
-
-    description = meta_content(
-        soup,
-        (
-            "name",
-            "description",
-        ),
-        (
-            "property",
-            "og:description",
-        ),
-    )
-
-    if description:
-        return description
-
-    return (
-        f"{name} from "
-        "Moe's App Hub."
-    )
-
-
-def extract_version(
-    soup: BeautifulSoup,
-) -> str:
-    for item in soup.find_all(
-        [
-            "li",
-            "span",
-            "div",
-            "p",
-        ]
-    ):
-        text = clean_text(
-            item.get_text(
-                " ",
-                strip=True,
-            )
-        )
-
-        if (
-            not text
-            or
-            len(text) > 80
-        ):
-            continue
-
-        match = re.search(
-            r"(?:version\s*:?\s*|^v)"
-            r"([0-9]+(?:\.[0-9A-Za-z_-]+)+)",
-            text,
-            re.IGNORECASE,
-        )
-
-        if match:
-            return match.group(1)
-
-    body = clean_text(
-        soup.get_text(
-            " ",
-            strip=True,
-        )
-    )
-
-    match = re.search(
-        r"\bv"
-        r"([0-9]+(?:\.[0-9A-Za-z_-]+)+)",
-        body,
-        re.IGNORECASE,
-    )
-
-    if match:
-        return match.group(1)
-
-    return "0"
-
-
-def extract_detail(
-    record,
-):
-    response = fetch(
-        record["detail_url"]
-    )
-
-    soup = BeautifulSoup(
-        response.text,
-        "html.parser",
-    )
-
-    app_id = record[
-        "app_id"
-    ]
-
-    name = extract_name(
-        soup,
-        app_id,
-    )
-
-    description = (
-        extract_description(
-            soup,
-            name,
-        )
-    )
-
-    version = extract_version(
-        soup
-    )
-
-    page_text = clean_text(
-        soup.get_text(
-            " ",
-            strip=True,
-        )
-    )
-
-    size = parse_size_bytes(
-        page_text
-    )
-
-    release_date = (
-        parse_update_date(
-            page_text
-        )
-    )
-
-    download_url = record.get(
-        "download_url",
-        "",
-    )
-
-    app_store_url = record.get(
-        "app_store_url",
-        "",
-    )
-
-    icon_url = record.get(
-        "icon_url",
-        "",
-    )
-
-    anchors = soup.find_all(
-        "a",
-        href=True,
-    )
-
-    for anchor in anchors:
-        href = absolute_url(
-            str(
-                anchor.get(
-                    "href",
-                    "",
-                )
-            )
-        )
-
-        text = clean_text(
-            anchor.get_text(
-                " ",
-                strip=True,
-            )
-        ).lower()
-
-        if (
-            is_download_url(href)
-            and
-            (
-                not download_url
-                or
-                "download" in text
-                or
-                "ipa" in text
-            )
-        ):
-            download_url = href
-
-            if (
-                "download" in text
-                or
-                "ipa" in text
-            ):
-                break
-
-    if not app_store_url:
-        for anchor in anchors:
-            href = absolute_url(
-                str(
-                    anchor.get(
-                        "href",
-                        "",
-                    )
-                )
-            )
-
-            if is_app_store_url(
-                href
-            ):
-                app_store_url = href
-                break
-
-    og_image = meta_content(
-        soup,
-        (
-            "property",
-            "og:image",
-        ),
-        (
-            "name",
-            "twitter:image",
-        ),
-    )
-
-    if og_image:
-        icon_url = absolute_url(
-            og_image
-        )
-
-    if not icon_url:
-        image = soup.find(
-            "img",
-            src=True,
-        )
-
-        if image:
+        if icon is not None:
             icon_url = absolute_url(
-                str(
-                    image.get(
+                clean_text(
+                    icon.get(
                         "src",
                         "",
                     )
                 )
             )
 
-    return {
-        "app_id": app_id,
-        "name": name,
-        "description": description,
-        "version": version,
-        "date": release_date,
-        "size": size,
-        "download_url": (
-            normalize_download_url(
-                download_url
+        description = ""
+
+        description_element = (
+            article.select_one(
+                "p.app-description"
             )
-        ),
-        "original_download_url": (
-            absolute_url(
-                download_url
-            )
-        ),
-        "icon_url": icon_url,
-        "app_store_url": (
-            app_store_url
-        ),
-        "detail_url": (
-            record["detail_url"]
-        ),
-    }
-
-
-def apple_id_from_url(
-    url: str,
-) -> str | None:
-    if not url:
-        return None
-
-    match = APPLE_ID_RE.search(
-        url
-    )
-
-    if not match:
-        return None
-
-    return match.group(1)
-
-
-@lru_cache(maxsize=512)
-def apple_lookup(
-    app_store_url: str,
-) -> dict[str, Any]:
-    apple_id = apple_id_from_url(
-        app_store_url
-    )
-
-    if not apple_id:
-        return {}
-
-    try:
-        response = fetch(
-            "https://itunes.apple.com/"
-            f"lookup?id={apple_id}",
-            tries=3,
         )
 
-        payload = response.json()
+        if description_element:
+            description = clean_text(
+                description_element.get_text(
+                    " ",
+                    strip=True,
+                )
+            )
 
-        results = payload.get(
-            "results"
-        ) or []
+        changelog = ""
 
-        if not results:
-            return {}
+        changelog_element = (
+            article.select_one(
+                ".app-changelog-preview "
+                ".changelog-text"
+            )
+        )
 
-        app = results[0]
+        if changelog_element:
+            changelog = clean_text(
+                changelog_element.get_text(
+                    " ",
+                    strip=True,
+                )
+            )
 
-        return {
-            "bundleIdentifier": (
+        meta_spans = article.select(
+            ".app-meta-row span"
+        )
+
+        version_text = ""
+
+        size_text = ""
+
+        if len(meta_spans) >= 1:
+            version_text = clean_text(
+                meta_spans[0].get_text(
+                    " ",
+                    strip=True,
+                )
+            )
+
+        if len(meta_spans) >= 2:
+            size_text = clean_text(
+                meta_spans[1].get_text(
+                    " ",
+                    strip=True,
+                )
+            )
+
+        version = re.sub(
+            r"^[vV]\s*",
+            "",
+            version_text,
+        ).strip()
+
+        if not version:
+            version = "1.0"
+
+        app_store_url = ""
+
+        app_store_link = (
+            article.select_one(
+                'a[href*="apps.apple.com"]'
+            )
+        )
+
+        if app_store_link is not None:
+            app_store_url = absolute_url(
                 clean_text(
-                    app.get(
-                        "bundleId"
+                    app_store_link.get(
+                        "href",
+                        "",
                     )
                 )
-            ),
-            "developerName": (
-                clean_text(
-                    app.get(
-                        "sellerName"
-                    )
+            )
+
+        detail_url = absolute_url(
+            detail_href
+        )
+
+        if not description:
+            description = (
+                f"{name} from Moe's App Hub."
+            )
+
+        cards.append(
+            {
+                "app_id": app_id,
+                "name": name,
+                "version": version,
+                "size": parse_size_bytes(
+                    size_text
+                ),
+                "date": timestamp_to_date(
+                    data_modified
+                ),
+                "data_modified": (
+                    data_modified
+                ),
+                "description": (
+                    description
+                ),
+                "changelog": (
+                    changelog
+                ),
+                "icon_url": (
+                    icon_url
                     or
-                    app.get(
-                        "artistName"
+                    BASE_URL + "/favicon.ico"
+                ),
+                "download_url": (
+                    normalize_download_url(
+                        download_url
                     )
-                )
-            ),
-            "iconURL": (
-                app.get(
-                    "artworkUrl512"
-                )
-                or
-                app.get(
-                    "artworkUrl100"
-                )
-                or
-                ""
-            ),
-            "minOSVersion": (
-                clean_text(
-                    app.get(
-                        "minimumOsVersion"
-                    )
-                )
-            ),
-            "category": (
-                clean_text(
-                    app.get(
-                        "primaryGenreName"
-                    )
-                ).lower()
-            ),
-        }
-
-    except Exception as exc:
-        log(
-            "::warning::"
-            "Apple lookup failed for "
-            f"{app_store_url}: {exc}"
+                ),
+                "detail_url": detail_url,
+                "app_store_url": (
+                    app_store_url
+                ),
+            }
         )
 
-        return {}
+    return cards
 
 
-def fallback_bundle_id(
-    app_id: str,
-) -> str:
-    digest = hashlib.sha1(
-        app_id.encode(
-            "utf-8"
-        )
-    ).hexdigest()[:16]
-
-    return (
-        "pro.mohkg1017."
-        f"moe.{digest}"
-    )
-
-
-def load_previous():
+def load_previous_apps():
     if not OUTPUT_FILE.exists():
         return {}
 
     try:
-        payload = json.loads(
+        data = json.loads(
             OUTPUT_FILE.read_text(
                 encoding="utf-8"
             )
@@ -1102,8 +655,7 @@ def load_previous():
 
     except Exception as exc:
         log(
-            "::warning::"
-            "Could not read old "
+            f"Warning: couldn't read old "
             f"apps.json: {exc}"
         )
 
@@ -1111,157 +663,131 @@ def load_previous():
 
     previous = {}
 
-    apps = payload.get(
+    for app in data.get(
         "apps",
         [],
-    )
-
-    if not isinstance(
-        apps,
-        list,
     ):
-        return {}
-
-    for app in apps:
         if not isinstance(
             app,
             dict,
         ):
             continue
 
-        app_id = clean_text(
+        bundle_id = clean_text(
             app.get(
-                "moeAppID"
+                "bundleIdentifier",
+                "",
             )
         )
 
-        if app_id:
+        if bundle_id:
             previous[
-                app_id
+                bundle_id
             ] = app
 
     return previous
 
 
-def version_key(
-    version,
-):
-    return (
-        clean_text(
-            version.get(
-                "version"
-            )
-        ),
-        clean_text(
-            version.get(
-                "date"
-            )
-        ),
-        clean_text(
-            version.get(
-                "downloadURL"
-            )
-        ),
-    )
-
-
 def merge_versions(
     old_app,
-    current,
-    min_os,
+    card,
 ):
-    versions = []
-
-    if old_app:
-        old_versions = (
-            old_app.get(
-                "versions"
-            )
-            or
-            []
-        )
-
-        for version in old_versions:
-            if isinstance(
-                version,
-                dict,
-            ):
-                versions.append(
-                    dict(version)
-                )
-
     new_version = {
-        "version": (
-            current["version"]
-        ),
-        "date": (
-            current["date"]
-        ),
-        "size": (
-            current["size"]
+        "version": card["version"],
+        "date": card["date"],
+        "localizedDescription": (
+            card["changelog"]
+            or
+            card["description"]
         ),
         "downloadURL": (
-            current[
-                "download_url"
-            ]
+            card["download_url"]
         ),
-        "localizedDescription": (
-            current[
-                "description"
-            ]
-        ),
-        "minOSVersion": (
-            min_os
-        ),
+        "size": card["size"],
     }
 
-    versions = [
-        version
-        for version in versions
-        if not (
-            clean_text(
-                version.get(
-                    "version"
-                )
-            )
-            ==
-            clean_text(
-                new_version[
-                    "version"
-                ]
-            )
-            and
-            clean_text(
-                version.get(
-                    "date"
-                )
-            )
-            ==
-            clean_text(
-                new_version[
-                    "date"
-                ]
-            )
+    existing = []
+
+    if isinstance(
+        old_app,
+        dict,
+    ):
+        old_versions = old_app.get(
+            "versions",
+            [],
         )
+
+        if isinstance(
+            old_versions,
+            list,
+        ):
+            for version in old_versions:
+                if isinstance(
+                    version,
+                    dict,
+                ):
+                    existing.append(
+                        dict(version)
+                    )
+
+    merged = [
+        new_version
     ]
 
-    versions.insert(
-        0,
-        new_version,
-    )
+    for version in existing:
+        same_version = (
+            clean_text(
+                version.get(
+                    "version",
+                    "",
+                )
+            )
+            ==
+            new_version["version"]
+        )
+
+        same_download = (
+            clean_text(
+                version.get(
+                    "downloadURL",
+                    "",
+                )
+            )
+            ==
+            new_version[
+                "downloadURL"
+            ]
+        )
+
+        if (
+            same_version
+            and
+            same_download
+        ):
+            continue
+
+        merged.append(
+            version
+        )
 
     deduped = []
 
     seen = set()
 
-    for version in versions:
-        version.setdefault(
-            "minOSVersion",
-            min_os,
-        )
-
-        key = version_key(
-            version
+    for version in merged:
+        key = (
+            clean_text(
+                version.get(
+                    "version",
+                    "",
+                )
+            ),
+            clean_text(
+                version.get(
+                    "downloadURL",
+                    "",
+                )
+            ),
         )
 
         if key in seen:
@@ -1278,366 +804,266 @@ def merge_versions(
     ]
 
 
-def build_app(
-    current,
-    old_app,
+def build_source_app(
+    card,
+    previous_apps,
 ):
-    apple = apple_lookup(
-        current[
-            "app_store_url"
-        ]
-    )
-
     bundle_identifier = (
-        apple.get(
-            "bundleIdentifier"
-        )
-        or
-        (
-            old_app
-            or {}
-        ).get(
-            "bundleIdentifier"
-        )
-        or
-        fallback_bundle_id(
-            current[
-                "app_id"
-            ]
+        make_bundle_identifier(
+            card["app_id"]
         )
     )
 
-    developer_name = (
-        apple.get(
-            "developerName"
-        )
-        or
-        (
-            old_app
-            or {}
-        ).get(
-            "developerName"
-        )
-        or
-        "Moe's App Hub"
-    )
-
-    icon_url = (
-        current.get(
-            "icon_url"
-        )
-        or
-        apple.get(
-            "iconURL"
-        )
-        or
-        (
-            old_app
-            or {}
-        ).get(
-            "iconURL"
-        )
-        or
-        f"{BASE_URL}/favicon.ico"
-    )
-
-    min_os = (
-        apple.get(
-            "minOSVersion"
-        )
-        or
-        "12.0"
-    )
-
-    category = (
-        apple.get(
-            "category"
-        )
-        or
-        "utilities"
+    old_app = previous_apps.get(
+        bundle_identifier
     )
 
     versions = merge_versions(
         old_app,
-        current,
-        min_os,
+        card,
     )
 
     return {
-        "name": (
-            current["name"]
-        ),
+        "name": card["name"],
         "bundleIdentifier": (
             bundle_identifier
         ),
         "developerName": (
-            developer_name
+            "Moe's App Hub"
         ),
         "subtitle": (
-            "Moe's App Hub build"
+            "Moe's App Hub"
         ),
         "localizedDescription": (
-            current[
-                "description"
-            ]
+            card["description"]
         ),
         "iconURL": (
-            icon_url
+            card["icon_url"]
         ),
-        "category": (
-            category
-        ),
-        "versions": (
-            versions
-        ),
-        "appPermissions": {
-            "entitlements": [],
-            "privacy": {},
-        },
-        "moeAppID": (
-            current["app_id"]
-        ),
-        "moeURL": (
-            current[
-                "detail_url"
-            ]
-        ),
-        "appStoreURL": (
-            current[
-                "app_store_url"
-            ]
-        ),
-        "originalDownloadURL": (
-            current[
-                "original_download_url"
-            ]
-        ),
+        "versions": versions,
     }
 
 
 def main():
-    old_apps = load_previous()
-
-    catalog = discover_catalog()
-
-    records = list(
-        catalog.values()
+    log(
+        "Fetching Moe's App Hub..."
     )
+
+    first_html = fetch_page(1)
+
+    total_apps, per_page = (
+        parse_catalog_count(
+            first_html
+        )
+    )
+
+    if (
+        total_apps
+        and
+        per_page
+    ):
+        total_pages = math.ceil(
+            total_apps
+            /
+            per_page
+        )
+
+        total_pages = min(
+            total_pages,
+            MAX_PAGES,
+        )
+
+        log(
+            f"Moe reports "
+            f"{total_apps} apps, "
+            f"{per_page} per page, "
+            f"{total_pages} pages."
+        )
+
+    else:
+        total_pages = (
+            max_pagination_page(
+                first_html
+            )
+        )
+
+        total_pages = max(
+            1,
+            min(
+                total_pages,
+                MAX_PAGES,
+            ),
+        )
+
+        log(
+            "Couldn't read the displayed "
+            "app count; using pagination. "
+            f"Detected {total_pages} pages."
+        )
+
+    discovered = {}
+
+    first_cards = parse_app_cards(
+        first_html
+    )
+
+    for card in first_cards:
+        discovered[
+            card["app_id"]
+        ] = card
 
     log(
-        f"Discovered "
-        f"{len(records)} "
-        "unique Moe listings."
+        f"Page 1/{total_pages}: "
+        f"{len(first_cards)} cards, "
+        f"{len(discovered)} unique apps."
     )
 
-    log(
-        f"Fetching detail pages "
-        f"with {MAX_WORKERS} workers..."
-    )
+    for page in range(
+        2,
+        total_pages + 1,
+    ):
+        time.sleep(
+            PAGE_DELAY_SECONDS
+        )
 
-    details = []
+        html = fetch_page(
+            page
+        )
 
-    failures = []
+        cards = parse_app_cards(
+            html
+        )
 
-    with ThreadPoolExecutor(
-        max_workers=MAX_WORKERS
-    ) as executor:
-        future_map = {
-            executor.submit(
-                extract_detail,
-                record,
-            ): record
-            for record
-            in records
-        }
+        before = len(
+            discovered
+        )
 
-        completed = 0
-
-        for future in as_completed(
-            future_map
-        ):
-            record = future_map[
-                future
-            ]
-
-            completed += 1
-
-            try:
-                detail = (
-                    future.result()
-                )
-
-                if not detail[
-                    "download_url"
-                ]:
-                    raise RuntimeError(
-                        "No IPA/download "
-                        "URL found"
-                    )
-
-                details.append(
-                    detail
-                )
-
-            except Exception as exc:
-                failures.append(
-                    (
-                        record[
-                            "app_id"
-                        ],
-                        str(exc),
-                    )
-                )
-
-                log(
-                    "::warning::"
-                    f"{record['app_id']} "
-                    f"failed: {exc}"
-                )
+        for card in cards:
+            old = discovered.get(
+                card["app_id"]
+            )
 
             if (
-                completed % 20 == 0
+                old is None
                 or
-                completed == len(records)
-            ):
-                log(
-                    f"Fetched "
-                    f"{completed}/"
-                    f"{len(records)} "
-                    f"| failed "
-                    f"{len(failures)}"
+                card[
+                    "data_modified"
+                ]
+                >=
+                old.get(
+                    "data_modified",
+                    0,
                 )
+            ):
+                discovered[
+                    card["app_id"]
+                ] = card
 
-    success_ratio = (
-        len(details)
-        /
-        max(
-            1,
-            len(records),
+        added = (
+            len(discovered)
+            -
+            before
         )
+
+        log(
+            f"Page {page}/{total_pages}: "
+            f"{len(cards)} cards, "
+            f"+{added} new, "
+            f"{len(discovered)} unique."
+        )
+
+    if not discovered:
+        raise RuntimeError(
+            "Found zero apps. "
+            "Refusing to overwrite "
+            "apps.json."
+        )
+
+    if total_apps:
+        coverage = (
+            len(discovered)
+            /
+            total_apps
+        )
+
+        if coverage < 0.90:
+            raise RuntimeError(
+                "Catalog scrape looks "
+                "incomplete. "
+                f"Moe reports {total_apps} "
+                f"apps but only "
+                f"{len(discovered)} unique "
+                "apps were discovered. "
+                "Refusing to overwrite "
+                "apps.json."
+            )
+
+    previous_apps = (
+        load_previous_apps()
     )
 
-    if success_ratio < 0.70:
-        raise RuntimeError(
-            "Too many Moe pages failed. "
-            f"Only {len(details)}/"
-            f"{len(records)} succeeded. "
-            "Existing apps.json will "
-            "not be overwritten."
-        )
+    cards = list(
+        discovered.values()
+    )
 
-    apps = []
-
-    details.sort(
+    cards.sort(
         key=lambda item: (
-            item.get(
-                "date",
-                "",
-            ),
-            item.get(
-                "name",
-                "",
-            ),
+            item[
+                "data_modified"
+            ],
+            item[
+                "name"
+            ].lower(),
         ),
         reverse=True,
     )
 
-    for number, detail in enumerate(
-        details,
-        start=1,
-    ):
-        try:
-            app = build_app(
-                detail,
-                old_apps.get(
-                    detail[
-                        "app_id"
-                    ]
-                ),
-            )
+    apps = []
 
-            apps.append(
-                app
+    for card in cards:
+        apps.append(
+            build_source_app(
+                card,
+                previous_apps,
             )
-
-        except Exception as exc:
-            log(
-                "::warning::"
-                f"Could not build "
-                f"{detail['app_id']}: "
-                f"{exc}"
-            )
-
-        if (
-            number % 25 == 0
-            or
-            number == len(details)
-        ):
-            log(
-                f"Built "
-                f"{number}/"
-                f"{len(details)}"
-            )
-
-    if not apps:
-        raise RuntimeError(
-            "Generated zero apps. "
-            "Refusing to write "
-            "an empty source."
         )
 
     now = (
         datetime
         .now(timezone.utc)
+        .replace(
+            microsecond=0
+        )
         .isoformat()
+        .replace(
+            "+00:00",
+            "Z",
+        )
     )
 
     source = {
         "name": (
             "Moe's App Hub "
-            "— Full Source"
+            "Full Library"
         ),
         "identifier": (
-            "pro.shrubhub."
-            "moe-full"
+            "com.zoinkdoggie94.moes"
         ),
+        "apiVersion": "v2",
         "subtitle": (
-            f"Full automatic Moe "
-            f"catalog — {len(apps)} apps"
+            f"{len(apps)} apps "
+            "automatically synced "
+            "from Moe's App Hub"
         ),
         "description": (
             "Automatically generated "
-            "AltStore-compatible source "
-            "containing Moe's full public "
-            "app catalog."
+            "full Moe's App Hub catalog."
         ),
-        "website": (
-            BASE_URL
-        ),
-        "sourceURL": (
-            "apps.json"
-        ),
-        "tintColor": (
-            "#34C759"
-        ),
-        "apps": (
-            apps
-        ),
+        "sourceURL": SOURCE_URL,
+        "website": BASE_URL,
+        "tintColor": "#34C759",
+        "apps": apps,
         "news": [],
-        "generatedAt": (
-            now
-        ),
-        "stats": {
-            "discovered": (
-                len(records)
-            ),
-            "published": (
-                len(apps)
-            ),
-            "failed": (
-                len(failures)
-            ),
-        },
     }
 
     temp_file = Path(
@@ -1647,8 +1073,8 @@ def main():
     temp_file.write_text(
         json.dumps(
             source,
-            ensure_ascii=False,
             indent=2,
+            ensure_ascii=False,
         )
         + "\n",
         encoding="utf-8",
@@ -1658,30 +1084,37 @@ def main():
         OUTPUT_FILE
     )
 
+    log("")
     log(
-        f"DONE: wrote "
-        f"{len(apps)} apps "
-        "to apps.json"
+        "================================"
+    )
+    log(
+        f"DONE: published "
+        f"{len(apps)} apps."
     )
 
-    if failures:
+    if total_apps:
         log(
-            "Failed IDs: "
-            +
-            ", ".join(
-                app_id
-                for app_id, _
-                in failures
-            )
+            f"Moe reported: "
+            f"{total_apps}"
         )
+
+    log(
+        f"Generated at: {now}"
+    )
+
+    log(
+        f"Source URL: {SOURCE_URL}"
+    )
+
+    log(
+        "================================"
+    )
 
 
 if __name__ == "__main__":
     try:
         main()
-
-    except KeyboardInterrupt:
-        raise
 
     except Exception as exc:
         print(
@@ -1689,4 +1122,4 @@ if __name__ == "__main__":
             file=sys.stderr,
         )
 
-        raise
+        sys.exit(1)
