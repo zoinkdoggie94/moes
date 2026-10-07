@@ -13,8 +13,33 @@ from bs4 import BeautifulSoup
 from curl_cffi import requests
 
 
+# ============================================================
+# SHRUBBERY / SHRUBHUB — MOE'S APP HUB FULL SOURCE
+# ============================================================
+#
+# Created by Shrubbery / ShrubHub
+# GitHub: https://github.com/zoinkdoggie94
+#
+# This project automatically converts the public Moe's App Hub
+# catalog into a full AltStore / SideStore compatible source.
+#
+# Original app catalog:
+# https://moe.mohkg1017.pro
+#
+# Moe's App Hub itself and the apps distributed through it are
+# not created or owned by Shrubbery / ShrubHub.
+#
+# ============================================================
+
+
 BASE_URL = "https://moe.mohkg1017.pro"
-SOURCE_URL = "https://raw.githubusercontent.com/zoinkdoggie94/moes/main/apps.json"
+
+REPO_URL = "https://github.com/zoinkdoggie94/moes"
+
+SOURCE_URL = (
+    "https://raw.githubusercontent.com/"
+    "zoinkdoggie94/moes/main/apps.json"
+)
 
 OUTPUT_FILE = Path("apps.json")
 
@@ -24,21 +49,28 @@ MAX_RETRIES = 5
 MAX_PAGES = 100
 MAX_VERSIONS_PER_APP = 5
 
+
 USER_AGENT = (
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-    "AppleWebKit/605.1.15 (KHTML, like Gecko) "
-    "Version/17.0 Safari/605.1.15"
+    "Mozilla/5.0 "
+    "(Macintosh; Intel Mac OS X 10_15_7) "
+    "AppleWebKit/537.36 "
+    "(KHTML, like Gecko) "
+    "Chrome/140.0.0.0 "
+    "Safari/537.36"
 )
+
 
 APP_ID_RE = re.compile(
     r"/app/(app_(\d+)_(\d+))",
     re.IGNORECASE,
 )
 
+
 COUNT_RE = re.compile(
     r"Showing\s+(\d+)\s+of\s+(\d+)\s+apps",
     re.IGNORECASE,
 )
+
 
 SIZE_RE = re.compile(
     r"([0-9]+(?:\.[0-9]+)?)\s*(B|KB|MB|GB|TB)",
@@ -47,112 +79,9 @@ SIZE_RE = re.compile(
 
 
 def log(message: str) -> None:
-    print(message, flush=True)
-
-
-def make_session():
-    session = requests.Session(
-        impersonate="chrome"
-    )
-
-    session.headers.update(
-        {
-            "User-Agent": USER_AGENT,
-            "Accept-Language": "en-US,en;q=0.9",
-            "Referer": BASE_URL + "/",
-        }
-    )
-
-    return session
-
-
-session = make_session()
-
-
-def fetch_page(page: int) -> str:
-    global session
-
-    last_error = None
-
-    for attempt in range(
-        1,
-        MAX_RETRIES + 1,
-    ):
-        try:
-            response = session.get(
-                BASE_URL + "/",
-                params={"page": page},
-                timeout=REQUEST_TIMEOUT,
-            )
-
-            if response.status_code == 403:
-                log(
-                    f"Page {page}: got HTTP 403 "
-                    f"(attempt {attempt}/{MAX_RETRIES})"
-                )
-
-                session = make_session()
-
-                if attempt < MAX_RETRIES:
-                    time.sleep(
-                        min(
-                            10,
-                            1.5 * attempt,
-                        )
-                    )
-                    continue
-
-            if response.status_code == 429:
-                log(
-                    f"Page {page}: rate limited "
-                    f"(attempt {attempt}/{MAX_RETRIES})"
-                )
-
-                if attempt < MAX_RETRIES:
-                    time.sleep(
-                        min(
-                            20,
-                            3 * attempt,
-                        )
-                    )
-                    continue
-
-            response.raise_for_status()
-
-            if not response.text.strip():
-                raise RuntimeError(
-                    "Moe returned an empty page"
-                )
-
-            return response.text
-
-        except Exception as exc:
-            last_error = exc
-
-            if attempt >= MAX_RETRIES:
-                break
-
-            delay = min(
-                15,
-                1.5 * (2 ** (attempt - 1)),
-            )
-
-            log(
-                f"Page {page}: request failed: {exc}"
-            )
-
-            log(
-                f"Retrying in {delay:.1f}s..."
-            )
-
-            session = make_session()
-
-            time.sleep(delay)
-
-    raise RuntimeError(
-        f"Failed to fetch Moe page {page} "
-        f"after {MAX_RETRIES} attempts: "
-        f"{last_error}"
+    print(
+        message,
+        flush=True,
     )
 
 
@@ -177,11 +106,388 @@ def absolute_url(url: str) -> str:
     )
 
 
-def parse_size_bytes(text: str) -> int:
+def make_session():
+    new_session = requests.Session(
+        impersonate="chrome"
+    )
+
+    new_session.headers.update(
+        {
+            "User-Agent": USER_AGENT,
+            "Accept": (
+                "text/html,"
+                "application/xhtml+xml,"
+                "application/xml;q=0.9,"
+                "image/avif,"
+                "image/webp,"
+                "image/apng,"
+                "*/*;q=0.8"
+            ),
+            "Accept-Language": (
+                "en-US,en;q=0.9"
+            ),
+            "Cache-Control": "no-cache",
+            "Pragma": "no-cache",
+            "Referer": BASE_URL + "/",
+        }
+    )
+
+    return new_session
+
+
+session = make_session()
+
+
+def fetch_page(page: int) -> str:
+    global session
+
+    last_error = None
+
+    for attempt in range(
+        1,
+        MAX_RETRIES + 1,
+    ):
+        try:
+            response = session.get(
+                BASE_URL + "/",
+                params={
+                    "page": page,
+                },
+                timeout=REQUEST_TIMEOUT,
+            )
+
+            if response.status_code == 403:
+                log(
+                    f"Page {page}: HTTP 403 "
+                    f"(attempt {attempt}/"
+                    f"{MAX_RETRIES})"
+                )
+
+                session = make_session()
+
+                if attempt < MAX_RETRIES:
+                    time.sleep(
+                        min(
+                            10,
+                            1.5 * attempt,
+                        )
+                    )
+
+                    continue
+
+            if response.status_code == 429:
+                log(
+                    f"Page {page}: rate limited "
+                    f"(attempt {attempt}/"
+                    f"{MAX_RETRIES})"
+                )
+
+                session = make_session()
+
+                if attempt < MAX_RETRIES:
+                    time.sleep(
+                        min(
+                            20,
+                            3 * attempt,
+                        )
+                    )
+
+                    continue
+
+            response.raise_for_status()
+
+            html = response.text
+
+            if not html.strip():
+                raise RuntimeError(
+                    "Moe returned an empty page."
+                )
+
+            return html
+
+        except Exception as exc:
+            last_error = exc
+
+            if attempt >= MAX_RETRIES:
+                break
+
+            delay = min(
+                15,
+                1.5 * (
+                    2 ** (
+                        attempt - 1
+                    )
+                ),
+            )
+
+            log(
+                f"Page {page}: request failed: "
+                f"{exc}"
+            )
+
+            log(
+                f"Retrying in "
+                f"{delay:.1f} seconds..."
+            )
+
+            session = make_session()
+
+            time.sleep(delay)
+
+    raise RuntimeError(
+        f"Failed to fetch Moe page {page} "
+        f"after {MAX_RETRIES} attempts: "
+        f"{last_error}"
+    )
+
+
+def discover_source_icon(
+    html: str,
+) -> str:
+    """
+    Find Moe's actual current site icon automatically.
+
+    Priority:
+    1. Apple touch icon
+    2. Large icon
+    3. Standard favicon/icon
+    4. Shortcut icon
+    5. og:image
+    6. /favicon.ico fallback
+
+    This means if Moe changes the path of the icon later,
+    this source can automatically follow the new icon.
+    """
+
+    soup = BeautifulSoup(
+        html,
+        "html.parser",
+    )
+
+    # --------------------------------------------------------
+    # Apple touch icon
+    # --------------------------------------------------------
+
+    for link in soup.find_all(
+        "link",
+        href=True,
+    ):
+        rel = link.get(
+            "rel",
+            [],
+        )
+
+        if isinstance(
+            rel,
+            str,
+        ):
+            rel_values = [
+                rel.lower()
+            ]
+
+        else:
+            rel_values = [
+                str(value).lower()
+                for value in rel
+            ]
+
+        if (
+            "apple-touch-icon"
+            in rel_values
+            or
+            "apple-touch-icon-precomposed"
+            in rel_values
+        ):
+            href = clean_text(
+                link.get(
+                    "href",
+                    "",
+                )
+            )
+
+            if href:
+                icon = absolute_url(
+                    href
+                )
+
+                log(
+                    "Found Moe Apple "
+                    f"touch icon: {icon}"
+                )
+
+                return icon
+
+    # --------------------------------------------------------
+    # Prefer larger declared icons
+    # --------------------------------------------------------
+
+    icon_candidates = []
+
+    for link in soup.find_all(
+        "link",
+        href=True,
+    ):
+        rel = link.get(
+            "rel",
+            [],
+        )
+
+        if isinstance(
+            rel,
+            str,
+        ):
+            rel_values = [
+                rel.lower()
+            ]
+
+        else:
+            rel_values = [
+                str(value).lower()
+                for value in rel
+            ]
+
+        is_icon = (
+            "icon" in rel_values
+            or
+            (
+                "shortcut"
+                in rel_values
+                and
+                "icon"
+                in rel_values
+            )
+        )
+
+        if not is_icon:
+            continue
+
+        href = clean_text(
+            link.get(
+                "href",
+                "",
+            )
+        )
+
+        if not href:
+            continue
+
+        size_score = 0
+
+        sizes = clean_text(
+            link.get(
+                "sizes",
+                "",
+            )
+        ).lower()
+
+        match = re.search(
+            r"(\d+)\s*x\s*(\d+)",
+            sizes,
+        )
+
+        if match:
+            try:
+                width = int(
+                    match.group(1)
+                )
+
+                height = int(
+                    match.group(2)
+                )
+
+                size_score = (
+                    width * height
+                )
+
+            except Exception:
+                size_score = 0
+
+        icon_candidates.append(
+            (
+                size_score,
+                absolute_url(
+                    href
+                ),
+            )
+        )
+
+    if icon_candidates:
+        icon_candidates.sort(
+            key=lambda item: item[0],
+            reverse=True,
+        )
+
+        icon = (
+            icon_candidates[0][1]
+        )
+
+        log(
+            f"Found Moe site icon: {icon}"
+        )
+
+        return icon
+
+    # --------------------------------------------------------
+    # OpenGraph image
+    # --------------------------------------------------------
+
+    og_image = soup.find(
+        "meta",
+        attrs={
+            "property": "og:image",
+        },
+    )
+
+    if (
+        og_image is not None
+        and
+        og_image.get("content")
+    ):
+        icon = absolute_url(
+            clean_text(
+                og_image.get(
+                    "content",
+                    "",
+                )
+            )
+        )
+
+        if icon:
+            log(
+                "Using Moe OpenGraph "
+                f"image as source icon: "
+                f"{icon}"
+            )
+
+            return icon
+
+    # --------------------------------------------------------
+    # Safe fallback
+    # --------------------------------------------------------
+
+    fallback = (
+        BASE_URL +
+        "/favicon.ico"
+    )
+
+    log(
+        "No declared site icon was "
+        "found. Using fallback: "
+        f"{fallback}"
+    )
+
+    return fallback
+
+
+def parse_size_bytes(
+    text: str,
+) -> int:
     if not text:
         return 0
 
-    match = SIZE_RE.search(text)
+    match = SIZE_RE.search(
+        text
+    )
 
     if not match:
         return 0
@@ -215,14 +521,21 @@ def extract_google_drive_id(
     if not url:
         return None
 
-    parsed = urlparse(url)
+    parsed = urlparse(
+        url
+    )
 
-    host = parsed.netloc.lower()
+    host = (
+        parsed.netloc
+        .lower()
+    )
 
     if (
-        "drive.google.com" not in host
+        "drive.google.com"
+        not in host
         and
-        "drive.usercontent.google.com" not in host
+        "drive.usercontent.google.com"
+        not in host
     ):
         return None
 
@@ -231,7 +544,9 @@ def extract_google_drive_id(
     )
 
     if query.get("id"):
-        return query["id"][0]
+        return (
+            query["id"][0]
+        )
 
     match = re.search(
         r"/(?:file/)?d/([^/?#]+)",
@@ -247,15 +562,20 @@ def extract_google_drive_id(
 def normalize_download_url(
     url: str,
 ) -> str:
-    url = absolute_url(url)
-
-    drive_id = extract_google_drive_id(
+    url = absolute_url(
         url
+    )
+
+    drive_id = (
+        extract_google_drive_id(
+            url
+        )
     )
 
     if drive_id:
         return (
-            "https://drive.usercontent.google.com/"
+            "https://"
+            "drive.usercontent.google.com/"
             "download"
             f"?id={drive_id}"
             "&export=download"
@@ -278,7 +598,9 @@ def parse_catalog_count(
         strip=True,
     )
 
-    match = COUNT_RE.search(text)
+    match = COUNT_RE.search(
+        text
+    )
 
     if not match:
         return None, None
@@ -294,7 +616,10 @@ def parse_catalog_count(
     if per_page <= 0:
         return total, None
 
-    return total, per_page
+    return (
+        total,
+        per_page,
+    )
 
 
 def max_pagination_page(
@@ -311,16 +636,21 @@ def max_pagination_page(
         "a",
         href=True,
     ):
-        href = str(
+        href = clean_text(
             anchor.get(
                 "href",
                 "",
             )
         )
 
+        if not href:
+            continue
+
         try:
             parsed = urlparse(
-                absolute_url(href)
+                absolute_url(
+                    href
+                )
             )
 
             query = parse_qs(
@@ -365,12 +695,13 @@ def make_bundle_identifier(
         )
 
         return (
-            "com.zoinkdoggie94."
-            f"moes.{safe}"
+            "com.shrubhub."
+            "moes."
+            f"{safe}"
         )
 
     return (
-        "com.zoinkdoggie94.moes."
+        "com.shrubhub.moes."
         f"a{match.group(1)}."
         f"a{match.group(2)}"
     )
@@ -393,7 +724,9 @@ def timestamp_to_date(
     except Exception:
         return (
             datetime
-            .now(timezone.utc)
+            .now(
+                timezone.utc
+            )
             .date()
             .isoformat()
         )
@@ -412,31 +745,39 @@ def parse_app_cards(
     for article in soup.select(
         "article.app-card"
     ):
-        detail_link = article.select_one(
-            "a.app-card-open-link"
+        detail_link = (
+            article.select_one(
+                "a.app-card-open-link"
+            )
         )
 
         if detail_link is None:
             continue
 
-        detail_href = str(
+        detail_href = clean_text(
             detail_link.get(
                 "href",
                 "",
             )
         )
 
-        id_match = APP_ID_RE.search(
-            detail_href
+        id_match = (
+            APP_ID_RE.search(
+                detail_href
+            )
         )
 
         if not id_match:
             continue
 
-        app_id = id_match.group(1)
+        app_id = (
+            id_match.group(1)
+        )
 
-        download_link = article.select_one(
-            "a.download-link"
+        download_link = (
+            article.select_one(
+                "a.download-link"
+            )
         )
 
         if download_link is None:
@@ -460,8 +801,13 @@ def parse_app_cards(
         )
 
         if not name:
-            heading = article.select_one(
-                "h2, h3, .app-name, .app-title"
+            heading = (
+                article.select_one(
+                    "h2, "
+                    "h3, "
+                    ".app-name, "
+                    ".app-title"
+                )
             )
 
             if heading:
@@ -542,17 +888,19 @@ def parse_app_cards(
                 )
             )
 
-        meta_spans = article.select(
-            ".app-meta-row span"
+        meta_spans = (
+            article.select(
+                ".app-meta-row span"
+            )
         )
 
         version_text = ""
-
         size_text = ""
 
         if len(meta_spans) >= 1:
             version_text = clean_text(
-                meta_spans[0].get_text(
+                meta_spans[0]
+                .get_text(
                     " ",
                     strip=True,
                 )
@@ -560,7 +908,8 @@ def parse_app_cards(
 
         if len(meta_spans) >= 2:
             size_text = clean_text(
-                meta_spans[1].get_text(
+                meta_spans[1]
+                .get_text(
                     " ",
                     strip=True,
                 )
@@ -583,56 +932,78 @@ def parse_app_cards(
             )
         )
 
-        if app_store_link is not None:
-            app_store_url = absolute_url(
-                clean_text(
-                    app_store_link.get(
-                        "href",
-                        "",
+        if (
+            app_store_link
+            is not None
+        ):
+            app_store_url = (
+                absolute_url(
+                    clean_text(
+                        app_store_link.get(
+                            "href",
+                            "",
+                        )
                     )
                 )
             )
 
-        detail_url = absolute_url(
-            detail_href
+        detail_url = (
+            absolute_url(
+                detail_href
+            )
         )
 
         if not description:
             description = (
-                f"{name} from Moe's App Hub."
+                f"{name} from "
+                "Moe's App Hub."
             )
 
         cards.append(
             {
                 "app_id": app_id,
+
                 "name": name,
+
                 "version": version,
+
                 "size": parse_size_bytes(
                     size_text
                 ),
+
                 "date": timestamp_to_date(
                     data_modified
                 ),
+
                 "data_modified": (
                     data_modified
                 ),
+
                 "description": (
                     description
                 ),
+
                 "changelog": (
                     changelog
                 ),
+
                 "icon_url": (
                     icon_url
                     or
-                    BASE_URL + "/favicon.ico"
+                    BASE_URL
+                    + "/favicon.ico"
                 ),
+
                 "download_url": (
                     normalize_download_url(
                         download_url
                     )
                 ),
-                "detail_url": detail_url,
+
+                "detail_url": (
+                    detail_url
+                ),
+
                 "app_store_url": (
                     app_store_url
                 ),
@@ -655,18 +1026,27 @@ def load_previous_apps():
 
     except Exception as exc:
         log(
-            f"Warning: couldn't read old "
-            f"apps.json: {exc}"
+            "Warning: couldn't read "
+            "old apps.json: "
+            f"{exc}"
         )
 
         return {}
 
     previous = {}
 
-    for app in data.get(
+    apps = data.get(
         "apps",
         [],
+    )
+
+    if not isinstance(
+        apps,
+        list,
     ):
+        return {}
+
+    for app in apps:
         if not isinstance(
             app,
             dict,
@@ -693,17 +1073,29 @@ def merge_versions(
     card,
 ):
     new_version = {
-        "version": card["version"],
-        "date": card["date"],
+        "version": (
+            card["version"]
+        ),
+
+        "date": (
+            card["date"]
+        ),
+
         "localizedDescription": (
             card["changelog"]
             or
             card["description"]
         ),
+
         "downloadURL": (
-            card["download_url"]
+            card[
+                "download_url"
+            ]
         ),
-        "size": card["size"],
+
+        "size": (
+            card["size"]
+        ),
     }
 
     existing = []
@@ -743,7 +1135,9 @@ def merge_versions(
                 )
             )
             ==
-            new_version["version"]
+            new_version[
+                "version"
+            ]
         )
 
         same_download = (
@@ -771,7 +1165,6 @@ def merge_versions(
         )
 
     deduped = []
-
     seen = set()
 
     for version in merged:
@@ -793,7 +1186,9 @@ def merge_versions(
         if key in seen:
             continue
 
-        seen.add(key)
+        seen.add(
+            key
+        )
 
         deduped.append(
             version
@@ -814,8 +1209,10 @@ def build_source_app(
         )
     )
 
-    old_app = previous_apps.get(
-        bundle_identifier
+    old_app = (
+        previous_apps.get(
+            bundle_identifier
+        )
     )
 
     versions = merge_versions(
@@ -824,32 +1221,83 @@ def build_source_app(
     )
 
     return {
-        "name": card["name"],
+        "name": (
+            card["name"]
+        ),
+
         "bundleIdentifier": (
             bundle_identifier
         ),
+
         "developerName": (
             "Moe's App Hub"
         ),
+
         "subtitle": (
-            "Moe's App Hub"
+            "From Moe's App Hub"
         ),
+
         "localizedDescription": (
             card["description"]
         ),
+
         "iconURL": (
             card["icon_url"]
         ),
-        "versions": versions,
+
+        "versions": (
+            versions
+        ),
     }
 
 
 def main():
     log(
+        "========================================"
+    )
+
+    log(
+        "Shrubbery / ShrubHub Moe Source"
+    )
+
+    log(
+        "Created by Shrubbery"
+    )
+
+    log(
+        "========================================"
+    )
+
+    log(
+        ""
+    )
+
+    log(
         "Fetching Moe's App Hub..."
     )
 
-    first_html = fetch_page(1)
+    first_html = fetch_page(
+        1
+    )
+
+    # ========================================================
+    # SOURCE ICON
+    # ========================================================
+
+    source_icon = (
+        discover_source_icon(
+            first_html
+        )
+    )
+
+    log(
+        f"Source icon: "
+        f"{source_icon}"
+    )
+
+    # ========================================================
+    # CATALOG SIZE
+    # ========================================================
 
     total_apps, per_page = (
         parse_catalog_count(
@@ -896,15 +1344,26 @@ def main():
         )
 
         log(
-            "Couldn't read the displayed "
-            "app count; using pagination. "
-            f"Detected {total_pages} pages."
+            "Couldn't read the "
+            "displayed app count; "
+            "using pagination."
         )
+
+        log(
+            f"Detected "
+            f"{total_pages} pages."
+        )
+
+    # ========================================================
+    # DISCOVER APPS
+    # ========================================================
 
     discovered = {}
 
-    first_cards = parse_app_cards(
-        first_html
+    first_cards = (
+        parse_app_cards(
+            first_html
+        )
     )
 
     for card in first_cards:
@@ -913,9 +1372,11 @@ def main():
         ] = card
 
     log(
-        f"Page 1/{total_pages}: "
+        f"Page 1/"
+        f"{total_pages}: "
         f"{len(first_cards)} cards, "
-        f"{len(discovered)} unique apps."
+        f"{len(discovered)} "
+        f"unique apps."
     )
 
     for page in range(
@@ -966,11 +1427,18 @@ def main():
         )
 
         log(
-            f"Page {page}/{total_pages}: "
+            f"Page "
+            f"{page}/"
+            f"{total_pages}: "
             f"{len(cards)} cards, "
             f"+{added} new, "
-            f"{len(discovered)} unique."
+            f"{len(discovered)} "
+            f"unique."
         )
+
+    # ========================================================
+    # SAFETY CHECK
+    # ========================================================
 
     if not discovered:
         raise RuntimeError(
@@ -990,17 +1458,27 @@ def main():
             raise RuntimeError(
                 "Catalog scrape looks "
                 "incomplete. "
-                f"Moe reports {total_apps} "
-                f"apps but only "
-                f"{len(discovered)} unique "
-                "apps were discovered. "
+                f"Moe reports "
+                f"{total_apps} apps "
+                f"but only "
+                f"{len(discovered)} "
+                "unique apps were "
+                "discovered. "
                 "Refusing to overwrite "
                 "apps.json."
             )
 
+    # ========================================================
+    # PREVIOUS VERSIONS
+    # ========================================================
+
     previous_apps = (
         load_previous_apps()
     )
+
+    # ========================================================
+    # SORT
+    # ========================================================
 
     cards = list(
         discovered.values()
@@ -1018,6 +1496,10 @@ def main():
         reverse=True,
     )
 
+    # ========================================================
+    # BUILD APPS
+    # ========================================================
+
     apps = []
 
     for card in cards:
@@ -1028,9 +1510,15 @@ def main():
             )
         )
 
+    # ========================================================
+    # GENERATED TIME
+    # ========================================================
+
     now = (
         datetime
-        .now(timezone.utc)
+        .now(
+            timezone.utc
+        )
         .replace(
             microsecond=0
         )
@@ -1041,30 +1529,129 @@ def main():
         )
     )
 
+    # ========================================================
+    # FINAL ALTSTORE SOURCE
+    # ========================================================
+
     source = {
         "name": (
             "Moe's App Hub "
-            "Full Library"
+            "— Shrubbery"
         ),
+
         "identifier": (
-            "com.zoinkdoggie94.moes"
+            "com.shrubhub."
+            "moes"
         ),
+
         "apiVersion": "v2",
+
         "subtitle": (
-            f"{len(apps)} apps "
-            "automatically synced "
-            "from Moe's App Hub"
+            f"Full Moe's App Hub "
+            f"library with "
+            f"{len(apps)} apps • "
+            "Built by Shrubbery / "
+            "ShrubHub"
         ),
+
         "description": (
-            "Automatically generated "
-            "full Moe's App Hub catalog."
+            "The full automatically "
+            "updated Moe's App Hub "
+            "library, converted into "
+            "an AltStore/SideStore "
+            "source by Shrubbery. "
+            "Built and maintained by "
+            "Shrubbery / ShrubHub. "
+            "Original app catalog and "
+            "app downloads are provided "
+            "by Moe's App Hub."
         ),
-        "sourceURL": SOURCE_URL,
-        "website": BASE_URL,
-        "tintColor": "#34C759",
-        "apps": apps,
+
+        # ----------------------------------------------------
+        # MOE'S APP HUB ICON
+        # ----------------------------------------------------
+
+        "iconURL": (
+            source_icon
+        ),
+
+        # Some third-party repo clients support this alias.
+        "sourceIconURL": (
+            source_icon
+        ),
+
+        # AltStore uses headerURL on the source About page.
+        "headerURL": (
+            source_icon
+        ),
+
+        # ----------------------------------------------------
+        # SHRUBBERY / SHRUBHUB CREDIT
+        # ----------------------------------------------------
+
+        "website": (
+            REPO_URL
+        ),
+
+        "sourceURL": (
+            SOURCE_URL
+        ),
+
+        "tintColor": (
+            "#34C759"
+        ),
+
+        "apps": (
+            apps
+        ),
+
         "news": [],
+
+        # Extra metadata. Clients that don't use these simply
+        # ignore them.
+        "META": {
+            "repoName": (
+                "Moe's App Hub "
+                "— Shrubbery"
+            ),
+
+            "repoIcon": (
+                source_icon
+            ),
+
+            "author": (
+                "Shrubbery"
+            ),
+
+            "team": (
+                "ShrubHub"
+            ),
+
+            "maintainer": (
+                "Shrubbery / ShrubHub"
+            ),
+
+            "originalCatalog": (
+                "Moe's App Hub"
+            ),
+
+            "originalCatalogURL": (
+                BASE_URL
+            ),
+
+            "repository": (
+                REPO_URL
+            ),
+
+            "generatedAt": (
+                now
+            ),
+        },
     }
+
+    # ========================================================
+    # WRITE SAFELY
+    # ========================================================
 
     temp_file = Path(
         "apps.json.tmp"
@@ -1084,31 +1671,61 @@ def main():
         OUTPUT_FILE
     )
 
+    # ========================================================
+    # DONE
+    # ========================================================
+
     log("")
     log(
-        "================================"
+        "========================================"
     )
+
     log(
-        f"DONE: published "
-        f"{len(apps)} apps."
+        "SUCCESS"
+    )
+
+    log(
+        "========================================"
+    )
+
+    log(
+        f"Published apps: "
+        f"{len(apps)}"
     )
 
     if total_apps:
         log(
-            f"Moe reported: "
+            f"Moe catalog count: "
             f"{total_apps}"
         )
 
     log(
-        f"Generated at: {now}"
+        f"Source icon: "
+        f"{source_icon}"
     )
 
     log(
-        f"Source URL: {SOURCE_URL}"
+        "Creator: "
+        "Shrubbery"
     )
 
     log(
-        "================================"
+        "Project: "
+        "ShrubHub"
+    )
+
+    log(
+        f"Generated: "
+        f"{now}"
+    )
+
+    log(
+        f"Source URL: "
+        f"{SOURCE_URL}"
+    )
+
+    log(
+        "========================================"
     )
 
 
