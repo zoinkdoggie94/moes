@@ -12,6 +12,385 @@
   "tintColor": "#34C759",
   "apps": [
     {
+      "name": "X 12.35 Moe TwiGalaxy 1.14",
+      "bundleIdentifier": "com.shrubhub.moes.a1784080465.a3855",
+      "developerName": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
+      "localizedDescription": "X 12.35 Moe TwiGalaxy 1.14 for iOS.",
+      "iconURL": "https://moe.mohkg1017.pro/uploads/icons/X_12.8_Moe_TwiGalaxy_1.13_1784080973684412972.webp?v=1792006799.0",
+      "versions": [
+        {
+          "version": "12.35",
+          "date": "2026-10-16",
+          "localizedDescription": "X 12.35 Moe TwiGalaxy 1.14 for iOS.",
+          "downloadURL": "https://drive.usercontent.google.com/download?id=18BJIU9qtmkB7gTN2VKjKjVfL6XhFMopi&export=download&confirm=t",
+          "size": 267282022
+        },
+        {
+          "version": "12.33",
+          "date": "2026-10-08",
+          "localizedDescription": "X 12.33 Moe TwiGalaxy 1.14 for iOS.",
+          "downloadURL": "https://drive.usercontent.google.com/download?id=1M0LVQ_aKd7mYZHiHYQ2udlUaoBgQjudX&export=download&confirm=t",
+          "size": 259522560
+        },
+        {
+          "version": "12.30",
+          "date": "2026-09-27",
+          "localizedDescription": "X 12.30 Moe TwiGalaxy 1.14 for iOS.",
+          "downloadURL": "https://drive.usercontent.google.com/download?id=1Xq3NWW5ImLSGYEH5Shj3cvdxU6MjRnsz&export=download&confirm=t",
+          "size": 254384537
+        }
+      ]
+    },
+    {
+      "name": "X 12.35 Moe Multi 8.4 Twitter Themed",
+      "bundleIdentifier": "com.shrubhub.moes.a1777318077.a9841",
+      "developerName": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
+      "localizedDescription": "Do not sign with ESign. Use a three-finger hold to open Moe Multi settings. Open this listing for full login instruction...",
+      "iconURL": "https://moe.mohkg1017.pro/uploads/icons/X_11.86_Moe_Multi_7.1_Twitter_Themed_NotSpoofed_1777320240649869255.webp?v=1792006799.0",
+      "versions": [
+        {
+          "version": "12.35",
+          "date": "2026-10-16",
+          "localizedDescription": "Twitter themed - Neofreebird - TWIGalaxy - BHTwitter - DLTwitter - XSY - NFB Toggle Fix - XLogin - TwitterNoAds - FixTwitterLogin",
+          "downloadURL": "https://drive.usercontent.google.com/download?id=10UOxvWL_V1t1ZIiByXvFtUjeF8Sj_C-0&export=download&confirm=t",
+          "size": 325897420
+        },
+        {
+          "version": "12.33",
+          "date": "2026-10-08",
+          "localizedDescription": "Twitter themed - Neofreebird - TWIGalaxy - BHTwitter - DLTwitter - XSY - NFB Toggle Fix - XLogin - TwitterNoAds - FixTwitterLogin",
+          "downloadURL": "https://drive.usercontent.google.com/download?id=14F77Z0m1umFpwHH7SIBI_-QeacsG7Z-v&export=download&confirm=t",
+          "size": 317928243
+        },
+        {
+          "version": "12.30",
+          "date": "2026-09-27",
+          "localizedDescription": "Twitter themed - Neofreebird - TWIGalaxy - BHTwitter - DLTwitter - XSY - NFB Toggle Fix - XLogin - TwitterNoAds - FixTwitterLogin",
+          "downloadURL": "https://drive.usercontent.google.com/download?id=1agz2VGjD5ZRjFRW6LfegKgwU8gMLMkT4&export=download&confirm=t",
+          "size": 312580505
+        }
+      ]
+    },
+    {
+      "name": "X 12.35 Moe Multi 8.4 Not Themed",
+      "bundleIdentifier": "com.shrubhub.moes.a1784080268.a9052",
+      "developerName": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
+      "localizedDescription": "Do not sign with ESign. Use a three-finger hold to open Moe Multi settings. Open this listing for full login instruction...",
+      "iconURL": "https://moe.mohkg1017.pro/uploads/icons/X_12.8_Moe_Multi_7.4_Normal_Liquid_Glass_1784080973683933008.webp?v=1792006799.0",
+      "versions": [
+        {
+          "version": "12.35",
+          "date": "2026-10-16",
+          "localizedDescription": "Twitter themed - Neofreebird - TWIGalaxy - BHTwitter - DLTwitter - XSY - NFB Toggle Fix - XLogin - TwitterNoAds - FixTwitterLogin",
+          "downloadURL": "https://drive.usercontent.google.com/download?id=15946O6lyQ7hOvKjk1iVCmN1YUVZrpcRe&export=download&confirm=t",
+          "size": 304191897
+        },
+        {
+          "version": "12.33",
+          "date": "2026-10-08",
+          "localizedDescription": "Twitter themed - Neofreebird - TWIGalaxy - BHTwitter - DLTwitter - XSY - NFB Toggle Fix - XLogin - TwitterNoAds - FixTwitterLogin",
+          "downloadURL": "https://drive.usercontent.google.com/download?id=1DZa9b90fY6D8UsF6pQtBsnY6-sC1wlyi&export=download&confirm=t",
+          "size": 296432435
+        },
+        {
+          "version": "12.30",
+          "date": "2026-09-27",
+          "localizedDescription": "Twitter themed - Neofreebird - TWIGalaxy - BHTwitter - DLTwitter - XSY - NFB Toggle Fix - XLogin - TwitterNoAds - FixTwitterLogin",
+          "downloadURL": "https://drive.usercontent.google.com/download?id=1njqx6jVdYF_lNPPFlUnGumboJtQbI8fL&export=download&confirm=t",
+          "size": 291294412
+        }
+      ]
+    },
+    {
+      "name": "X 12.35 Moe DL 2.1.6 Cracked",
+      "bundleIdentifier": "com.shrubhub.moes.a1777317975.a1223",
+      "developerName": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
+      "localizedDescription": "X 12.35 Moe DL 2.1.6 Cracked for iOS.",
+      "iconURL": "https://moe.mohkg1017.pro/uploads/icons/X_11.86_Moe_DL_2.1.6_Cracked_NotSpoofed_1777320240649596853.webp?v=1792006799.0",
+      "versions": [
+        {
+          "version": "12.35",
+          "date": "2026-10-16",
+          "localizedDescription": "X 12.35 Moe DL 2.1.6 Cracked for iOS.",
+          "downloadURL": "https://drive.usercontent.google.com/download?id=1lIwVPyG4DknEVOQOm0AZGvMfXq22pfpO&export=download&confirm=t",
+          "size": 273992908
+        },
+        {
+          "version": "12.33",
+          "date": "2026-10-08",
+          "localizedDescription": "X 12.33 Moe DL 2.1.6 Cracked for iOS.",
+          "downloadURL": "https://drive.usercontent.google.com/download?id=1MNmK_ASqUIeP8PEXavSWTOlpXTrMgZQu&export=download&confirm=t",
+          "size": 266233446
+        },
+        {
+          "version": "12.30",
+          "date": "2026-09-27",
+          "localizedDescription": "X 12.30 Moe DL 2.1.6 Cracked for iOS.",
+          "downloadURL": "https://drive.usercontent.google.com/download?id=15FLSCVTHdp1WBNFobMvqIKNGSgMhLREe&export=download&confirm=t",
+          "size": 260990566
+        }
+      ]
+    },
+    {
+      "name": "X 12.35 Moe BH 4.4",
+      "bundleIdentifier": "com.shrubhub.moes.a1777317933.a3342",
+      "developerName": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
+      "localizedDescription": "X 12.35 Moe BH 4.4 for iOS.",
+      "iconURL": "https://moe.mohkg1017.pro/uploads/icons/X_11.86_Moe_BH_4.4_NotSpoofed_1777320240649328012.webp?v=1792006799.0",
+      "versions": [
+        {
+          "version": "12.35",
+          "date": "2026-10-16",
+          "localizedDescription": "X 12.35 Moe BH 4.4 for iOS.",
+          "downloadURL": "https://drive.usercontent.google.com/download?id=1XI0FmjcQ4mS_3EF3lLRSJkA3Fp8Tnthz&export=download&confirm=t",
+          "size": 276719206
+        },
+        {
+          "version": "12.33",
+          "date": "2026-10-08",
+          "localizedDescription": "X 12.33 Moe BH 4.4 for iOS.",
+          "downloadURL": "https://drive.usercontent.google.com/download?id=1-lNon3NwgJgWsa57lyWFQ2a4J75u3do8&export=download&confirm=t",
+          "size": 268959744
+        },
+        {
+          "version": "12.30",
+          "date": "2026-09-27",
+          "localizedDescription": "X 12.30 Moe BH 4.4 for iOS.",
+          "downloadURL": "https://drive.usercontent.google.com/download?id=1IjCUjzoME106iX8FR_CNizmO3cHTmvsc&export=download&confirm=t",
+          "size": 263716864
+        }
+      ]
+    },
+    {
+      "name": "Wallcraft 3.42 Pro Moe",
+      "bundleIdentifier": "com.shrubhub.moes.a1758657043.a8761",
+      "developerName": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
+      "localizedDescription": "Wallcraft 3.42 Pro Moe for iOS.",
+      "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Wallcraft_1758656993.webp?v=1792006799.0",
+      "versions": [
+        {
+          "version": "3.42",
+          "date": "2026-10-16",
+          "localizedDescription": "Wallcraft 3.42 Pro Moe for iOS.",
+          "downloadURL": "https://drive.usercontent.google.com/download?id=1kgxaEK5Zg2V9NfskYmpNbK88PrLa0w58&export=download&confirm=t",
+          "size": 128765132
+        },
+        {
+          "version": "3.41",
+          "date": "2026-09-17",
+          "localizedDescription": "Wallcraft 3.41 Pro Moe for iOS.",
+          "downloadURL": "https://drive.usercontent.google.com/download?id=1I-Q3rY7CJ7GuHu-zhdeXE7rcL2EaInoG&export=download&confirm=t",
+          "size": 117021081
+        }
+      ]
+    },
+    {
+      "name": "Twitch Unblock 1.4.0 new twitch adblock client Moe",
+      "bundleIdentifier": "com.shrubhub.moes.a1791167942.a9698",
+      "developerName": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
+      "localizedDescription": "Twitch Unblock 1.4.0 new twitch adblock client Moe for iOS.",
+      "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Twitch_Unblock_new_twitch_adblock_clientMoe_1791168265896180706.webp?v=1792006799.0",
+      "versions": [
+        {
+          "version": "1.4.0",
+          "date": "2026-10-16",
+          "localizedDescription": "Twitch Unblock 1.4.0 new twitch adblock client Moe for iOS.",
+          "downloadURL": "https://drive.usercontent.google.com/download?id=1QDuA-t6JykC6smVDn0gtoEndUPxTeRwb&export=download&confirm=t",
+          "size": 4089446
+        },
+        {
+          "version": "1.3.0",
+          "date": "2026-10-13",
+          "localizedDescription": "Twitch Unblock 1.3.0 new twitch adblock client Moe for iOS.",
+          "downloadURL": "https://drive.usercontent.google.com/download?id=1lViSAFZc1Jn3Dpg5x0J1Xy17pSnf5kET&export=download&confirm=t",
+          "size": 3355443
+        },
+        {
+          "version": "1.2.2",
+          "date": "2026-10-05",
+          "localizedDescription": "Twitch Unblock new twitch adblock clientMoe for iOS.",
+          "downloadURL": "https://drive.usercontent.google.com/download?id=13oE9cqIHuHMYyrKxi2yUQ70H34pH-V6j&export=download&confirm=t",
+          "size": 1887436
+        }
+      ]
+    },
+    {
+      "name": "Twitch 31.6.2 Tweach 2.4.1",
+      "bundleIdentifier": "com.shrubhub.moes.a1776873611.a4164",
+      "developerName": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
+      "localizedDescription": "Twitch 31.6.2 Tweach 2.4.1 for iOS.",
+      "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Twitch_29.1_Moe_Tweach_2.3.1_1776873809811834224.webp?v=1792006799.0",
+      "versions": [
+        {
+          "version": "31.6.2",
+          "date": "2026-10-16",
+          "localizedDescription": "Twitch 31.6.2 Tweach 2.4.1 for iOS.",
+          "downloadURL": "https://drive.usercontent.google.com/download?id=1Sj60aJ5PlP_VPgh9uonx4LZrADyNTC9m&export=download&confirm=t",
+          "size": 213909504
+        },
+        {
+          "version": "31.6",
+          "date": "2026-10-13",
+          "localizedDescription": "Twitch 31.6 Tweach 2.4.1 for iOS.",
+          "downloadURL": "https://drive.usercontent.google.com/download?id=1HmSd8c_9f15Ts4ZOqFxW3gOenkqNusSw&export=download&confirm=t",
+          "size": 213909504
+        },
+        {
+          "version": "31.5",
+          "date": "2026-10-08",
+          "localizedDescription": "Twitch 31.5 Tweach 2.4.1 for iOS.",
+          "downloadURL": "https://drive.usercontent.google.com/download?id=1CmclvME44_YOonKUyu_WMQKD-vW9DOPH&export=download&confirm=t",
+          "size": 211917209
+        },
+        {
+          "version": "31.4.4",
+          "date": "2026-10-01",
+          "localizedDescription": "Twitch 31.4.4 Tweach 2.4.1 for iOS.",
+          "downloadURL": "https://drive.usercontent.google.com/download?id=1qU9_tSoVDP6jmJHAl0OYhymsor6wfp8k&export=download&confirm=t",
+          "size": 206359756
+        }
+      ]
+    },
+    {
+      "name": "Twitch 31.6.2 Moe TwitchControl 0.0.6 read description",
+      "bundleIdentifier": "com.shrubhub.moes.a1776873777.a5494",
+      "developerName": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
+      "localizedDescription": "for adblock to work, open mod menu, and import the file you download from https://tinyurl.com/3n9sz6mv into the mods set...",
+      "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Twitch_29.1_Moe_TwitchControl_0.0.2_1776873809811974185.webp?v=1792006799.0",
+      "versions": [
+        {
+          "version": "31.6.2",
+          "date": "2026-10-16",
+          "localizedDescription": "for adblock to work, open mod menu, and import the file you download from https://tinyurl.com/3n9sz6mv into the mods settings",
+          "downloadURL": "https://drive.usercontent.google.com/download?id=1u14W2egLN8dTdhYzC-rQMyI5xLnhmS8d&export=download&confirm=t",
+          "size": 202480025
+        },
+        {
+          "version": "31.6",
+          "date": "2026-10-13",
+          "localizedDescription": "for adblock to work, open mod menu, and import the file you download from https://tinyurl.com/3n9sz6mv into the mods settings",
+          "downloadURL": "https://drive.usercontent.google.com/download?id=16nSLg9U1wvdAAzVDvOvvQxEFlu8aly-t&export=download&confirm=t",
+          "size": 202480025
+        },
+        {
+          "version": "31.5",
+          "date": "2026-10-08",
+          "localizedDescription": "for adblock to work, open mod menu, and import the file you download from https://tinyurl.com/3n9sz6mv into the mods settings",
+          "downloadURL": "https://drive.usercontent.google.com/download?id=173O0VQdBwZb-JySDGWdfvG1sakC8FE7H&export=download&confirm=t",
+          "size": 200487731
+        },
+        {
+          "version": "31.4.4",
+          "date": "2026-10-01",
+          "localizedDescription": "for adblock to work, open mod menu, and import the file you download from https://tinyurl.com/3n9sz6mv into the mods settings",
+          "downloadURL": "https://drive.usercontent.google.com/download?id=1-iraq_46axBMzIrOZxr_xJ9hadprctFe&export=download&confirm=t",
+          "size": 194825420
+        }
+      ]
+    },
+    {
+      "name": "nuvio 0.6.1 Moe Patched",
+      "bundleIdentifier": "com.shrubhub.moes.a1790613010.a6710",
+      "developerName": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
+      "localizedDescription": "nuvio 0.6.1 Moe Patched for iOS.",
+      "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Nuvio_0.5.4_Moe_Patched_1790613385057390169.webp?v=1792006799.0",
+      "versions": [
+        {
+          "version": "0.6.1",
+          "date": "2026-10-16",
+          "localizedDescription": "nuvio 0.6.1 Moe Patched for iOS.",
+          "downloadURL": "https://drive.usercontent.google.com/download?id=16lxHT-Om1dtr4DJA0ONHFBUZqVQytlTt&export=download&confirm=t",
+          "size": 76441190
+        },
+        {
+          "version": "0.5.10",
+          "date": "2026-10-14",
+          "localizedDescription": "nuvio 0.5.10 full release Moe Patched for iOS.",
+          "downloadURL": "https://drive.usercontent.google.com/download?id=1x_c44UUwT5g7RvXX8K6cPDdvUu6xJDeO&export=download&confirm=t",
+          "size": 75497472
+        },
+        {
+          "version": "0.5.6",
+          "date": "2026-10-02",
+          "localizedDescription": "nuvio 0.5.6 Moe Patched for iOS.",
+          "downloadURL": "https://drive.usercontent.google.com/download?id=1f-InCEAFdL-XQzkkBTV-toFUB1mURyUN&export=download&confirm=t",
+          "size": 74344038
+        }
+      ]
+    },
+    {
+      "name": "Infuse 8.5.8 2.6 Moe Plus",
+      "bundleIdentifier": "com.shrubhub.moes.a1776873562.a1009",
+      "developerName": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
+      "localizedDescription": "Infuse 8.5.8 2.6 Moe Plus for iOS.",
+      "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Infuse_8.4.3_Moe_Plus_1776873809811426502.webp?v=1792006799.0",
+      "versions": [
+        {
+          "version": "8.5.8",
+          "date": "2026-10-16",
+          "localizedDescription": "Infuse 8.5.8 2.6 Moe Plus for iOS.",
+          "downloadURL": "https://drive.usercontent.google.com/download?id=1rgJD31YWP0GDGHTFEaYVIBeEItGIWHMI&export=download&confirm=t",
+          "size": 104228454
+        },
+        {
+          "version": "8.5.7",
+          "date": "2026-10-13",
+          "localizedDescription": "Infuse 8.5.7 2.6 Moe Plus for iOS.",
+          "downloadURL": "https://drive.usercontent.google.com/download?id=15s2EtsjGrpqAC5nh0CZARdf1upa-lWby&export=download&confirm=t",
+          "size": 104228454
+        },
+        {
+          "version": "8.5.6",
+          "date": "2026-09-30",
+          "localizedDescription": "Infuse 8.5.6 2.6 Moe Plus for iOS.",
+          "downloadURL": "https://drive.usercontent.google.com/download?id=1vwOPYqnxcCrx1lP7xBw0f1TkELfgE1YT&export=download&confirm=t",
+          "size": 104018739
+        }
+      ]
+    },
+    {
+      "name": "12.35 NeoFreeBird Revived 6.3.1 working login New Moe and andrew Version With Liquid Glass Toggle in tweaks Settings",
+      "bundleIdentifier": "com.shrubhub.moes.a1778043855.a2372",
+      "developerName": "Moe's App Hub",
+      "subtitle": "From Moe's App Hub",
+      "localizedDescription": "Liquid glass toggle is now built into the tweaks settings! Tweak by my friend Andrew and Me, a remade Neofreebird with a...",
+      "iconURL": "https://moe.mohkg1017.pro/uploads/icons/X_11.88_Moe_NFB_Andrew_Moe_Not_Spoofed_1778044015426832935.webp?v=1792006799.0",
+      "versions": [
+        {
+          "version": "12.35",
+          "date": "2026-10-16",
+          "localizedDescription": "Liquid glass toggle is now built into the tweaks settings! Tweak by my friend Andrew and Me, a remade Neofreebird with a download manager and so much more. Read Blog for changelog",
+          "downloadURL": "https://drive.usercontent.google.com/download?id=1bJfhuVwkvCXJcihF_IQQD-QzEvdbE-bN&export=download&confirm=t",
+          "size": 265184870
+        },
+        {
+          "version": "12.33",
+          "date": "2026-10-08",
+          "localizedDescription": "Liquid glass toggle is now built into the tweaks settings! Tweak by my friend Andrew and Me, a remade Neofreebird with a download manager and so much more. Read Blog for changelog",
+          "downloadURL": "https://drive.usercontent.google.com/download?id=12gTdol-hQeymXw4lmwclW5VfjgKwjXzx&export=download&confirm=t",
+          "size": 257005977
+        },
+        {
+          "version": "12.30",
+          "date": "2026-09-27",
+          "localizedDescription": "Liquid glass toggle is now built into the tweaks settings! Tweak by my friend Andrew and Me, a remade Neofreebird with a download manager and so much more. Read Blog for changelog",
+          "downloadURL": "https://drive.usercontent.google.com/download?id=1b8v4rrvt5FJ41qBT_l7SWIt5MDNheik_&export=download&confirm=t",
+          "size": 251658240
+        }
+      ]
+    },
+    {
       "name": "Discord 349.0 Raincord 0.10.0 Moe",
       "bundleIdentifier": "com.shrubhub.moes.a1757008016.a8973",
       "developerName": "Moe's App Hub",
@@ -43,30 +422,6 @@
       ]
     },
     {
-      "name": "nuvio 0.5.10 full release Moe Patched",
-      "bundleIdentifier": "com.shrubhub.moes.a1790613010.a6710",
-      "developerName": "Moe's App Hub",
-      "subtitle": "From Moe's App Hub",
-      "localizedDescription": "nuvio 0.5.10 full release Moe Patched for iOS.",
-      "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Nuvio_0.5.4_Moe_Patched_1790613385057390169.webp?v=1792006799.0",
-      "versions": [
-        {
-          "version": "0.5.10",
-          "date": "2026-10-14",
-          "localizedDescription": "nuvio 0.5.10 full release Moe Patched for iOS.",
-          "downloadURL": "https://drive.usercontent.google.com/download?id=1x_c44UUwT5g7RvXX8K6cPDdvUu6xJDeO&export=download&confirm=t",
-          "size": 75497472
-        },
-        {
-          "version": "0.5.6",
-          "date": "2026-10-02",
-          "localizedDescription": "nuvio 0.5.6 Moe Patched for iOS.",
-          "downloadURL": "https://drive.usercontent.google.com/download?id=1f-InCEAFdL-XQzkkBTV-toFUB1mURyUN&export=download&confirm=t",
-          "size": 74344038
-        }
-      ]
-    },
-    {
       "name": "Facebook 583.0.0 Moe iQ 1.2 and Nexus",
       "bundleIdentifier": "com.shrubhub.moes.a1790798429.a4247",
       "developerName": "Moe's App Hub",
@@ -94,92 +449,6 @@
           "localizedDescription": "Facebook 581.0.0 Moe iQ 1.2 and Nexus for iOS.",
           "downloadURL": "https://drive.usercontent.google.com/download?id=1zhf37t1Bv2qnpSnmFseXVN50nNogd6Ks&export=download&confirm=t",
           "size": 236244172
-        }
-      ]
-    },
-    {
-      "name": "Twitch Unblock 1.3.0 new twitch adblock client Moe",
-      "bundleIdentifier": "com.shrubhub.moes.a1791167942.a9698",
-      "developerName": "Moe's App Hub",
-      "subtitle": "From Moe's App Hub",
-      "localizedDescription": "Twitch Unblock 1.3.0 new twitch adblock client Moe for iOS.",
-      "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Twitch_Unblock_new_twitch_adblock_clientMoe_1791168265896180706.webp?v=1792006799.0",
-      "versions": [
-        {
-          "version": "1.3.0",
-          "date": "2026-10-13",
-          "localizedDescription": "Twitch Unblock 1.3.0 new twitch adblock client Moe for iOS.",
-          "downloadURL": "https://drive.usercontent.google.com/download?id=1lViSAFZc1Jn3Dpg5x0J1Xy17pSnf5kET&export=download&confirm=t",
-          "size": 3355443
-        },
-        {
-          "version": "1.2.2",
-          "date": "2026-10-05",
-          "localizedDescription": "Twitch Unblock new twitch adblock clientMoe for iOS.",
-          "downloadURL": "https://drive.usercontent.google.com/download?id=13oE9cqIHuHMYyrKxi2yUQ70H34pH-V6j&export=download&confirm=t",
-          "size": 1887436
-        }
-      ]
-    },
-    {
-      "name": "Twitch 31.6 Tweach 2.4.1",
-      "bundleIdentifier": "com.shrubhub.moes.a1776873611.a4164",
-      "developerName": "Moe's App Hub",
-      "subtitle": "From Moe's App Hub",
-      "localizedDescription": "Twitch 31.6 Tweach 2.4.1 for iOS.",
-      "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Twitch_29.1_Moe_Tweach_2.3.1_1776873809811834224.webp?v=1792006799.0",
-      "versions": [
-        {
-          "version": "31.6",
-          "date": "2026-10-13",
-          "localizedDescription": "Twitch 31.6 Tweach 2.4.1 for iOS.",
-          "downloadURL": "https://drive.usercontent.google.com/download?id=1HmSd8c_9f15Ts4ZOqFxW3gOenkqNusSw&export=download&confirm=t",
-          "size": 213909504
-        },
-        {
-          "version": "31.5",
-          "date": "2026-10-08",
-          "localizedDescription": "Twitch 31.5 Tweach 2.4.1 for iOS.",
-          "downloadURL": "https://drive.usercontent.google.com/download?id=1CmclvME44_YOonKUyu_WMQKD-vW9DOPH&export=download&confirm=t",
-          "size": 211917209
-        },
-        {
-          "version": "31.4.4",
-          "date": "2026-10-01",
-          "localizedDescription": "Twitch 31.4.4 Tweach 2.4.1 for iOS.",
-          "downloadURL": "https://drive.usercontent.google.com/download?id=1qU9_tSoVDP6jmJHAl0OYhymsor6wfp8k&export=download&confirm=t",
-          "size": 206359756
-        }
-      ]
-    },
-    {
-      "name": "Twitch 31.6 Moe TwitchControl 0.0.6 read description",
-      "bundleIdentifier": "com.shrubhub.moes.a1776873777.a5494",
-      "developerName": "Moe's App Hub",
-      "subtitle": "From Moe's App Hub",
-      "localizedDescription": "for adblock to work, open mod menu, and import the file you download from https://tinyurl.com/3n9sz6mv into the mods set...",
-      "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Twitch_29.1_Moe_TwitchControl_0.0.2_1776873809811974185.webp?v=1792006799.0",
-      "versions": [
-        {
-          "version": "31.6",
-          "date": "2026-10-13",
-          "localizedDescription": "for adblock to work, open mod menu, and import the file you download from https://tinyurl.com/3n9sz6mv into the mods settings",
-          "downloadURL": "https://drive.usercontent.google.com/download?id=16nSLg9U1wvdAAzVDvOvvQxEFlu8aly-t&export=download&confirm=t",
-          "size": 202480025
-        },
-        {
-          "version": "31.5",
-          "date": "2026-10-08",
-          "localizedDescription": "for adblock to work, open mod menu, and import the file you download from https://tinyurl.com/3n9sz6mv into the mods settings",
-          "downloadURL": "https://drive.usercontent.google.com/download?id=173O0VQdBwZb-JySDGWdfvG1sakC8FE7H&export=download&confirm=t",
-          "size": 200487731
-        },
-        {
-          "version": "31.4.4",
-          "date": "2026-10-01",
-          "localizedDescription": "for adblock to work, open mod menu, and import the file you download from https://tinyurl.com/3n9sz6mv into the mods settings",
-          "downloadURL": "https://drive.usercontent.google.com/download?id=1-iraq_46axBMzIrOZxr_xJ9hadprctFe&export=download&confirm=t",
-          "size": 194825420
         }
       ]
     },
@@ -276,30 +545,6 @@
           "localizedDescription": "PDF Expert 7.26.1 Moe Pro for iOS.",
           "downloadURL": "https://drive.usercontent.google.com/download?id=1b9cvBQHrvPIxBw5DdcOsLcuHSFq2w3AA&export=download&confirm=t",
           "size": 164521574
-        }
-      ]
-    },
-    {
-      "name": "Infuse 8.5.7 2.6 Moe Plus",
-      "bundleIdentifier": "com.shrubhub.moes.a1776873562.a1009",
-      "developerName": "Moe's App Hub",
-      "subtitle": "From Moe's App Hub",
-      "localizedDescription": "Infuse 8.5.7 2.6 Moe Plus for iOS.",
-      "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Infuse_8.4.3_Moe_Plus_1776873809811426502.webp?v=1792006799.0",
-      "versions": [
-        {
-          "version": "8.5.7",
-          "date": "2026-10-13",
-          "localizedDescription": "Infuse 8.5.7 2.6 Moe Plus for iOS.",
-          "downloadURL": "https://drive.usercontent.google.com/download?id=15s2EtsjGrpqAC5nh0CZARdf1upa-lWby&export=download&confirm=t",
-          "size": 104228454
-        },
-        {
-          "version": "8.5.6",
-          "date": "2026-09-30",
-          "localizedDescription": "Infuse 8.5.6 2.6 Moe Plus for iOS.",
-          "downloadURL": "https://drive.usercontent.google.com/download?id=1vwOPYqnxcCrx1lP7xBw0f1TkELfgE1YT&export=download&confirm=t",
-          "size": 104018739
         }
       ]
     },
@@ -1306,126 +1551,6 @@
       ]
     },
     {
-      "name": "X 12.33 Moe TwiGalaxy 1.14",
-      "bundleIdentifier": "com.shrubhub.moes.a1784080465.a3855",
-      "developerName": "Moe's App Hub",
-      "subtitle": "From Moe's App Hub",
-      "localizedDescription": "X 12.33 Moe TwiGalaxy 1.14 for iOS.",
-      "iconURL": "https://moe.mohkg1017.pro/uploads/icons/X_12.8_Moe_TwiGalaxy_1.13_1784080973684412972.webp?v=1792006799.0",
-      "versions": [
-        {
-          "version": "12.33",
-          "date": "2026-10-08",
-          "localizedDescription": "X 12.33 Moe TwiGalaxy 1.14 for iOS.",
-          "downloadURL": "https://drive.usercontent.google.com/download?id=1M0LVQ_aKd7mYZHiHYQ2udlUaoBgQjudX&export=download&confirm=t",
-          "size": 259522560
-        },
-        {
-          "version": "12.30",
-          "date": "2026-09-27",
-          "localizedDescription": "X 12.30 Moe TwiGalaxy 1.14 for iOS.",
-          "downloadURL": "https://drive.usercontent.google.com/download?id=1Xq3NWW5ImLSGYEH5Shj3cvdxU6MjRnsz&export=download&confirm=t",
-          "size": 254384537
-        }
-      ]
-    },
-    {
-      "name": "X 12.33 Moe Multi 8.4 Twitter Themed",
-      "bundleIdentifier": "com.shrubhub.moes.a1777318077.a9841",
-      "developerName": "Moe's App Hub",
-      "subtitle": "From Moe's App Hub",
-      "localizedDescription": "Do not sign with ESign. Use a three-finger hold to open Moe Multi settings. Open this listing for full login instruction...",
-      "iconURL": "https://moe.mohkg1017.pro/uploads/icons/X_11.86_Moe_Multi_7.1_Twitter_Themed_NotSpoofed_1777320240649869255.webp?v=1792006799.0",
-      "versions": [
-        {
-          "version": "12.33",
-          "date": "2026-10-08",
-          "localizedDescription": "Twitter themed - Neofreebird - TWIGalaxy - BHTwitter - DLTwitter - XSY - NFB Toggle Fix - XLogin - TwitterNoAds - FixTwitterLogin",
-          "downloadURL": "https://drive.usercontent.google.com/download?id=14F77Z0m1umFpwHH7SIBI_-QeacsG7Z-v&export=download&confirm=t",
-          "size": 317928243
-        },
-        {
-          "version": "12.30",
-          "date": "2026-09-27",
-          "localizedDescription": "Twitter themed - Neofreebird - TWIGalaxy - BHTwitter - DLTwitter - XSY - NFB Toggle Fix - XLogin - TwitterNoAds - FixTwitterLogin",
-          "downloadURL": "https://drive.usercontent.google.com/download?id=1agz2VGjD5ZRjFRW6LfegKgwU8gMLMkT4&export=download&confirm=t",
-          "size": 312580505
-        }
-      ]
-    },
-    {
-      "name": "X 12.33 Moe Multi 8.4 Not Themed",
-      "bundleIdentifier": "com.shrubhub.moes.a1784080268.a9052",
-      "developerName": "Moe's App Hub",
-      "subtitle": "From Moe's App Hub",
-      "localizedDescription": "Do not sign with ESign. Use a three-finger hold to open Moe Multi settings. Open this listing for full login instruction...",
-      "iconURL": "https://moe.mohkg1017.pro/uploads/icons/X_12.8_Moe_Multi_7.4_Normal_Liquid_Glass_1784080973683933008.webp?v=1792006799.0",
-      "versions": [
-        {
-          "version": "12.33",
-          "date": "2026-10-08",
-          "localizedDescription": "Twitter themed - Neofreebird - TWIGalaxy - BHTwitter - DLTwitter - XSY - NFB Toggle Fix - XLogin - TwitterNoAds - FixTwitterLogin",
-          "downloadURL": "https://drive.usercontent.google.com/download?id=1DZa9b90fY6D8UsF6pQtBsnY6-sC1wlyi&export=download&confirm=t",
-          "size": 296432435
-        },
-        {
-          "version": "12.30",
-          "date": "2026-09-27",
-          "localizedDescription": "Twitter themed - Neofreebird - TWIGalaxy - BHTwitter - DLTwitter - XSY - NFB Toggle Fix - XLogin - TwitterNoAds - FixTwitterLogin",
-          "downloadURL": "https://drive.usercontent.google.com/download?id=1njqx6jVdYF_lNPPFlUnGumboJtQbI8fL&export=download&confirm=t",
-          "size": 291294412
-        }
-      ]
-    },
-    {
-      "name": "X 12.33 Moe DL 2.1.6 Cracked",
-      "bundleIdentifier": "com.shrubhub.moes.a1777317975.a1223",
-      "developerName": "Moe's App Hub",
-      "subtitle": "From Moe's App Hub",
-      "localizedDescription": "X 12.33 Moe DL 2.1.6 Cracked for iOS.",
-      "iconURL": "https://moe.mohkg1017.pro/uploads/icons/X_11.86_Moe_DL_2.1.6_Cracked_NotSpoofed_1777320240649596853.webp?v=1792006799.0",
-      "versions": [
-        {
-          "version": "12.33",
-          "date": "2026-10-08",
-          "localizedDescription": "X 12.33 Moe DL 2.1.6 Cracked for iOS.",
-          "downloadURL": "https://drive.usercontent.google.com/download?id=1MNmK_ASqUIeP8PEXavSWTOlpXTrMgZQu&export=download&confirm=t",
-          "size": 266233446
-        },
-        {
-          "version": "12.30",
-          "date": "2026-09-27",
-          "localizedDescription": "X 12.30 Moe DL 2.1.6 Cracked for iOS.",
-          "downloadURL": "https://drive.usercontent.google.com/download?id=15FLSCVTHdp1WBNFobMvqIKNGSgMhLREe&export=download&confirm=t",
-          "size": 260990566
-        }
-      ]
-    },
-    {
-      "name": "X 12.33 Moe BH 4.4",
-      "bundleIdentifier": "com.shrubhub.moes.a1777317933.a3342",
-      "developerName": "Moe's App Hub",
-      "subtitle": "From Moe's App Hub",
-      "localizedDescription": "X 12.33 Moe BH 4.4 for iOS.",
-      "iconURL": "https://moe.mohkg1017.pro/uploads/icons/X_11.86_Moe_BH_4.4_NotSpoofed_1777320240649328012.webp?v=1792006799.0",
-      "versions": [
-        {
-          "version": "12.33",
-          "date": "2026-10-08",
-          "localizedDescription": "X 12.33 Moe BH 4.4 for iOS.",
-          "downloadURL": "https://drive.usercontent.google.com/download?id=1-lNon3NwgJgWsa57lyWFQ2a4J75u3do8&export=download&confirm=t",
-          "size": 268959744
-        },
-        {
-          "version": "12.30",
-          "date": "2026-09-27",
-          "localizedDescription": "X 12.30 Moe BH 4.4 for iOS.",
-          "downloadURL": "https://drive.usercontent.google.com/download?id=1IjCUjzoME106iX8FR_CNizmO3cHTmvsc&export=download&confirm=t",
-          "size": 263716864
-        }
-      ]
-    },
-    {
       "name": "Tiktok 47.1.0 VibeTok 1.76 Moe",
       "bundleIdentifier": "com.shrubhub.moes.a1757106595.a2955",
       "developerName": "Moe's App Hub",
@@ -1851,30 +1976,6 @@
       ]
     },
     {
-      "name": "12.33 NeoFreeBird Revived 6.3.1 working login New Moe and andrew Version With Liquid Glass Toggle in tweaks Settings",
-      "bundleIdentifier": "com.shrubhub.moes.a1778043855.a2372",
-      "developerName": "Moe's App Hub",
-      "subtitle": "From Moe's App Hub",
-      "localizedDescription": "Liquid glass toggle is now built into the tweaks settings! Tweak by my friend Andrew and Me, a remade Neofreebird with a...",
-      "iconURL": "https://moe.mohkg1017.pro/uploads/icons/X_11.88_Moe_NFB_Andrew_Moe_Not_Spoofed_1778044015426832935.webp?v=1792006799.0",
-      "versions": [
-        {
-          "version": "12.33",
-          "date": "2026-10-08",
-          "localizedDescription": "Liquid glass toggle is now built into the tweaks settings! Tweak by my friend Andrew and Me, a remade Neofreebird with a download manager and so much more. Read Blog for changelog",
-          "downloadURL": "https://drive.usercontent.google.com/download?id=12gTdol-hQeymXw4lmwclW5VfjgKwjXzx&export=download&confirm=t",
-          "size": 257005977
-        },
-        {
-          "version": "12.30",
-          "date": "2026-09-27",
-          "localizedDescription": "Liquid glass toggle is now built into the tweaks settings! Tweak by my friend Andrew and Me, a remade Neofreebird with a download manager and so much more. Read Blog for changelog",
-          "downloadURL": "https://drive.usercontent.google.com/download?id=1b8v4rrvt5FJ41qBT_l7SWIt5MDNheik_&export=download&confirm=t",
-          "size": 251658240
-        }
-      ]
-    },
-    {
       "name": "Madeira 0.1.3 Moe Patched",
       "bundleIdentifier": "com.shrubhub.moes.a1791167980.a5298",
       "developerName": "Moe's App Hub",
@@ -1956,23 +2057,6 @@
           "localizedDescription": "MovieBoxPro 16.2 Patched for iOS.",
           "downloadURL": "https://drive.usercontent.google.com/download?id=1Y_weIFx4fv4erV82Qmqp5or_kZVbSlSM&export=download&confirm=t",
           "size": 45088768
-        }
-      ]
-    },
-    {
-      "name": "Wallcraft 3.41 Pro Moe",
-      "bundleIdentifier": "com.shrubhub.moes.a1758657043.a8761",
-      "developerName": "Moe's App Hub",
-      "subtitle": "From Moe's App Hub",
-      "localizedDescription": "Wallcraft 3.41 Pro Moe for iOS.",
-      "iconURL": "https://moe.mohkg1017.pro/uploads/icons/Wallcraft_1758656993.webp?v=1792006799.0",
-      "versions": [
-        {
-          "version": "3.41",
-          "date": "2026-09-17",
-          "localizedDescription": "Wallcraft 3.41 Pro Moe for iOS.",
-          "downloadURL": "https://drive.usercontent.google.com/download?id=1I-Q3rY7CJ7GuHu-zhdeXE7rcL2EaInoG&export=download&confirm=t",
-          "size": 117021081
         }
       ]
     },
@@ -4673,6 +4757,6 @@
     "originalCatalog": "Moe's App Hub",
     "originalCatalogURL": "https://moe.mohkg1017.pro",
     "repository": "https://github.com/zoinkdoggie94/moes",
-    "generatedAt": "2026-10-16T16:40:55Z"
+    "generatedAt": "2026-10-16T21:10:41Z"
   }
 }
